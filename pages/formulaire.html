@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Formulaire</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet_header.css" />
+    <script src="js/js1.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        
+<div id="fixed">        
+        <p id="callus">call us: 514 515 1146</p>
+        <p id="engfr">Eng / Fr</p>
+        <img id="imagetop" src="../images/header%20top.jpg" alt="headertop" />
+        <img id="logo" src="../images/logo_gym_siteweb.png" alt="logo" />
+
+        <div id="topslogan">
+            <h2 id="wepush">we push your limits</h2>
+            <img id="lineblanche" src="../images/line%20blanche.jpg" alt="lineblanche" />
+            <h2 id="onpousse">on pousse vos limites</h2>
+        </div>
+
+        <div id="side">
+            <img id="imageside" src="../images/header%20side.jpg" alt="headerside" />
+
+            <div id="icons">
+                <a href="https://www.facebook.com/"> <img src="../images/icons/facebook_small.png" alt="facebook" /></a>
+                <a href="https://www.twitter.com/"> <img src="../images/icons/twitter-small.png" alt="twitter" /></a>
+                <a href="https://www.instagram.com/"> <img src="../images/icons/Instagram-small.png" alt="insta" /></a>
+                <a href="https://www.youtube.com/"> <img src="../images/icons/YouTube-small.png" alt="youtube" /></a>
+            </div>
+        </div>
+    
+        <div id="mainmenu">
+                <ul id="menulist">
+                    <li><a href="../index.html">accueil</a></li>
+                    <li><a href="galerie.html">gyms</a></li>
+                    <li><a href="#">equipe</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="horaire.html">horaire</a></li>
+                    <li><a href="boutique.html">boutique</a></li>
+                    <li><a href="#">contact</a></li>
+
+                </ul>
+            
+         
+</div>
+    </div>
+        
+        <div id="main">
+               
+<div id="formulaire">
+
+    <form action="#" method="post">
+
+        <fieldset>
+
+            <legend>FORMULAIRE</legend>
+<!--champ texte-->
+                <span>
+                <input type="text" id="prénom" value="PRÉNOM" name="prénom" class="f1"/>
+                <input type="text" id="nom" name="nom" value="NOM" class="f1"/>
+                </span>
+
+                <span>
+                <input type="text" id="adresse" name="adresse" value="ADRESSE" class="f1"/>
+                <input type="text" id="ville" name="ville" value="VILLE" class="f1"/>
+                </span>
+
+                <span>
+                <input type="text" id="province" name="province" value="PROVINCE" class="f1"/>
+                <input type="text" id="code" name="CODE POSTAL" value="CODE POSTAL" class="f1"/>
+                </span>
+
+                <span>
+                <input type="text" id="domicile" name="domicile" value="TEL.DOMICILE" class="f1"/>
+                <input type="text" id="cell" name="cell" value="TEL TRAVAIL/CELL" class="f1"/>
+                </span>
+
+                <input type="text" id="courriel" name="courriel" value="COURRIEL" class="f1"/>
+            
+              <!--champ radio-->
+            
+                <div id="rad">
+                    GENRE:
+                    FEMME <input type="radio" name="sex" id="femme" value="FEMME"/>
+
+                    HOMME <input type="radio" name="sex" id="homme" value="HOMME"/>
+                </div>
+<!--liste déroulante-->
+            <div>
+                <select id="groupe" name="groupe" class="f1">
+                        <option>GROUPE D'AGES </option>
+                        <option>MOINS DE 18ANS</option>
+                        <option>18-25ANS</option>
+                        <option>26-35ANS</option>
+                        <option>36-45ANS</option>
+                        <option>PLUS DE 45ANS</option>
+
+                </select>
+
+            </div>
+            
+           <!--information--> 
+            
+            <div id="temps">
+
+            <span>AVEZ VOUS PRATIQUÉ UN SPORT LES DANS 12 DERNIERS MOIS :</span>
+            <span>OUI<input type="radio" id="oui" name="oui-non"/>
+            NON<input type="radio" id="non" name="oui-non"/></span>
+
+            </div>
+            
+                <!--champ case à cocher-->
+               
+            <div>
+                    
+            <span id="moment">QUEL EST LE MEILLEUR MOMENT POUR VOUS JOINDRE:</span>
+                    <span>
+            <label for="avant-midi">AVANT-MIDI</label>
+            <input type="checkbox" id="avant-midi" name="avant-midi"/>
+
+            <label for="après-midi">APRÈS-MIDI</label>
+            <input type="checkbox" id="après-midi" name="après-midi"/>
+            <label for="soirée">SOIRÉE</label>
+            <input type="checkbox" id="radio" name="soirée"/>
+                        </span>
+                </div>
+            
+                <!--texte multi-lignes-->
+                <span>
+                    
+<label for="commentaire"><strong>COMMENTAIRE</strong></label>
+            <textarea rows="8" cols="50" id="commentaire" name="commentaire"></textarea>
+                    </span>
+
+            <span>
+                <input type="submit" value="EFFACER" id="effacer" />
+                <input type="submit" value="SOUMETTRE" id="soumettre"/>
+            </span>
+            
+        </fieldset>
+    </form>
+</div>
+            
+            <div id="footer">
+                <p>&copy;LocoMotion 2015</p>
+                <p><a href="#wrapper">Haut de page</a></p>
+            
+            </div>
+        
+        </div>
+        </div>
+
+</body>
+
+</html>
