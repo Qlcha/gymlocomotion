@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <title>Fitness-test</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="../css/stylesheet_header.css" />
-    <script src="js/js1.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -53,35 +53,35 @@
         
         <div id="main">
                
-<div id="formulaire">
+<div id="fittest">
 
     <form action="#" method="post">
 
         <fieldset>
 
-            <div id="start_test">
+            <div id="start_fittest">
 
                 <p>Nous vous suggérons passer notre questionnaire en ligne avec les questions liées à votre niveau
                     de forme physique et de vos objectifs. Ce serra nous aider à vous offrir le programme d'eintraînement
                     optimale pour vous.</p>
 
                  <span>
-                <input type="submit" value="Passer le test" id="effacer" />
-                <input type="submit" value="Non, merci" id="soumettre"/>
+                <input type="submit" value="PASSER LE TEST" class="button_test" />
+                <input type="submit" value="NON, MERCI" class="button_test"/>
             </span>
 
             </div>
 
             <div id="q1">
 
-                    <p>Votre genre:</p>
-                    <input type="radio" name="sex" id="femme" value="FEMME"/>Femme
+                    <h5>Votre genre:</h5>
+                    <input type="radio"  value="FEMME"/>Femme
 
-                <input type="radio" name="sex" id="homme" value="HOMME"/>Homme
+                <input type="radio"  value="HOMME"/>Homme
 
 
-                <p>Votre groupe d'age?</p>
-                <select id="groupe" name="groupe" class="f1">
+                <h5>Votre groupe d'age?</h5>
+                <select id="age" name="age" class="#">
                         <option>Moins de 18 ans</option>
                         <option>18-25 ans</option>
                         <option>26-35 ans</option>
@@ -90,41 +90,35 @@
 
                 </select>
 
+
            </div>
 
             <div id="q2">
-                <p>Votre niveau d'activité physique</p>
-                <select id="groupe" name="groupe" class="f1">
+                <label for="niveau"><h5>Votre niveau d'activité physique</h5></label>
+                <select id="niveau" name="niveau" class="#">
                     <option>Trés active</option>
                     <option>Plus active que avant</option>
                     <option>Medium</option>
                     <option>Pas assez actif</option>
                     <option>Fiable</option>
-
-<p>Décrivez-le s'il vous plaît:</p>
-
-                    <label for="commentaire"><strong>Décrivez-le s'il vous plaît:</strong></label>
-                    <textarea rows="8" cols="50" id="commentaire" name="commentaire"></textarea>
-                    </span>
+</select>
 
             </div>
             
           <div id="q3">
 
-              <span>Comment vous vous déplacez quotidennement? </span>
-                    <span>
-            <label for="auto">Auto privée</label>
+
+
+              <h5>Comment vous vous déplacez quotidennement? </h5>
             <input type="checkbox" id="auto" name="auto"/>
+                        <label for="auto">Auto privée</label>
 
-            <label for="transport">Transport public</label>
+
             <input type="checkbox" id="transport" name="transport"/>
-            <label for="pied">A pied</label>
-            <input type="checkbox" id="pied" name="pied"/>
-                        </span>
+                        <label for="transport">Transport public</label>
 
-              <label for="commentaire">COMMENTAIRE</label>
-              <textarea rows="8" cols="50" id="commentaire" name="commentaire"></textarea>
-              </span>
+            <input type="checkbox" id="pied" name="pied"/>
+                        <label for="pied">A pied</label>
 
 
           </div>
@@ -132,14 +126,11 @@
             <div id="q4">
 
 
-                <span>Êtes-vous satisfait de vos poids?</span>
-            <span>Oui, en general<input type="radio" id="oui" name="oui-non"/>
-            Je voudrais perdre un peu de poids<input type="radio" id="non" name="oui-non"/></span>
-                Je voudrais perdre de poids significativement<input type="radio" id="non" name="oui-non"/></span>
-                Je voudrais prendre du poids<input type="radio" id="non" name="oui-non"/></span>
-
-                <label for="commentaire"><strong>COMMENTAIRE</strong></label>
-                <textarea rows="8" cols="50" id="commentaire" name="commentaire"></textarea>
+                <h5>Êtes-vous satisfait de vos poids?</h5>
+            <input type="radio" />Oui, en general
+            <input type="radio" />Je voudrais perdre un peu de poids
+                <input type="radio" />Je voudrais perdre de poids significativement
+                <input type="radio" />Je voudrais prendre du poids
 
 
             </div>
@@ -147,24 +138,23 @@
             <div id="q5">
 
 
-                <span>Décrivez vos objectifs d'entraînement</span>
-            <span>Amélioration de l'apparence de mon corps<input type="radio" id="oui" name="oui-non"/>
-            Force et la fonctionnalité<input type="radio" id="non" name="oui-non"/></span>
-                Endurance<input type="radio" id="non" name="oui-non"/></span>
-                Sport pour le plaisir<input type="radio" id="non" name="oui-non"/></span>
+                <h5>Quel est le prémier objectif de votre entraînement?</h5>
+            <input type="radio" />Amélioration de l'apparence de mon corps
+            <input type="radio" />Force et la fonctionnalité
+                <input type="radio" />Endurance
+                <input type="radio" />Sport pour le plaisir
 
-                <label for="commentaire"><strong>COMMENTAIRE</strong></label>
-                <textarea rows="8" cols="50" id="commentaire" name="commentaire"></textarea>
+
 
             </div>
 
             <div id="q6">
-                <span>Est-ce que vous avez des problemmes de la santé connus?</span>
-            <span>Cardio-vasculaire<input type="radio" id="oui" name="oui-non"/>
-            Musculo-squelettique<input type="radio" id="non" name="oui-non"/></span>
-                Endocrinologie<input type="radio" id="non" name="oui-non"/></span>
-                L'autre. Décrivez-le: <input type="radio" id="non" name="oui-non"/>
-                <textarea rows="1" cols="20" id="commentaire" name="commentaire"></textarea></span>
+                <h5>Est-ce que vous avez des problemmes de la santé connus?</h5>
+            <input type="radio" />Cardio-vasculaire
+            <input type="radio" /></span>Musculo-squelettique
+                <input type="radio" /></span>Endocrinologie
+                <span></span><input type="radio" />L'autre. Décrivez-le:
+                <textarea rows="1" cols="30" name="commentaire"></textarea></span>
 
 
             </div>
@@ -173,21 +163,68 @@
 
 
 
-                <span>Combien de fois par semaine voulez-vous vous eintraîner?</span>
-            <span>2 fois ou moin<input type="radio" id="oui" name="oui-non"/>
-            3-4<input type="radio" id="non" name="oui-non"/></span>
-                J'aimrais avoir d'activité chaque jour<input type="radio" id="non" name="oui-non"/></span>
+                <h5>Combien de fois par semaine voulez-vous vous eintraîner?</h5>
+            <input type="radio" />2 fois ou moin
+            <input type="radio" />3-4 fois
+                <input type="radio" />J'aimrais avoir d'activité chaque jour
+                <input type="radio" />Pas régulièrement
 
             </div>
-            
+
+
+
 
             <span>
-                <input type="submit" value="EFFACER" id="effacer" />
-                <input type="submit" value="SOUMETTRE" id="soumettre"/>
+                <input type="submit" value="RÉCOMMENCER" id="effacer" class="button_test"/>
+                <input type="submit" value="SOUMETTRE" id="soumettre" class="button_test"/>
             </span>
-            
+
+
+            <div id="cardio" class="test_result">
+                <h5>Votre programme récommendé: CARDIO</h5>
+                <p>Fréquence: 2-4 heures par semaine;</p>
+                <p>But: perte de graisse, récomposition;</p>
+                <p>Niveau d'activité: moyen</p>
+                <button class="button_test">VOIR HORAIRE</button>
+
+            </div>
+
+            <div id="fonctional" class="test_result">
+                <h5>Votre programme récommendé: FONCTIONALITÉ</h5>
+                <p>Fréquence: 2-4 heures par semaine;</p>
+                <p>But: récomposition, accumulation de musculature;</p>
+                <p>Niveau d'activité: haut;</p>
+                <button class="button_test">VOIR HORAIRE</button>
+
+            </div>
+
+            <div id="trainer" class="test_result">
+                <h5>Votre programme récommendé: Éntraînement avec entraîneur personnel</h5>
+                <p>Fréquence: 2-4 heures par semaine;</p>
+                <p>But: accumulation de musculature, force;</p>
+                <p>Niveau d'activité: haut/ moyen</p>
+                <button class="button_test">PRENDRE RDV</button>
+
+            </div>
+
+            <div id="yoga" class="test_result">
+                <h5>Votre programme récommendé: YOGA / ZUMBA</h5>
+                <p>Fréquence: 1 heures par semaine;</p>
+                <p>But: maintenir l'activité physique sans impact fort;</p>
+                <p>Niveau d'activité: moyen</p>
+
+                <button class="button_test">VOIR HORAIRE</button>
+
+            </div>
+
         </fieldset>
+
+
+
     </form>
+
+
+
 </div>
             
             <div id="footer">
@@ -198,6 +235,8 @@
         
         </div>
         </div>
+
+<script type="javascript" src="../javascript/fittest.js"></script>
 
 </body>
 

@@ -559,7 +559,7 @@ list-style: circle;
 
 /*FORMULAIRE*/
 
-formulaire{
+#formulaire{
        width: 90%;
        margin: 0 auto; 
    }
@@ -572,7 +572,7 @@ legend{color: red;
     margin-bottom: 40px;
 }
 
-fieldset{
+#formulaire fieldset{
     width: 70%;
     margin: 0 auto;
     border: 5px solid red;
@@ -648,6 +648,41 @@ fieldset{
 #soumettre{
     margin-left: 80px;
 }
+
+/* FITNESS TEST*/
+
+#fittest fieldset{
+    border: 3px solid red;
+    text-align: center;
+}
+
+.button_test {
+    background-color: red;
+    border:2px solid black;
+    display:inline-block;
+    color:white;
+    font-family:Arial;
+    font-size:14px;
+    /*font-weight:bold;*/
+    font-style: italic;
+    height:30px;
+    line-height:27px;
+    width:130px;
+    text-decoration:none;
+    text-align:center;
+
+}
+.button_test:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911) );
+    background:-moz-linear-gradient( center top, #f2ab1e 5%, #f0c911 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#f0c911');
+    background-color:#f2ab1e;
+}.button_test:active {
+     position:relative;
+     top:1px;
+ }
+
+/*FOOTER*/
 
 #footer a{color: red}
 
