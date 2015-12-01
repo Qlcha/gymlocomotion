@@ -682,6 +682,24 @@ legend{color: red;
      top:1px;
  }
 
+#fittest div {
+    margin-top: 30px;
+    border-bottom: 1px solid black;
+}
+
+#fittest li {
+    padding: 10px;
+    text-align: left;
+    margin-left: 300px;
+
+}
+
+.test_result p {
+    text-align: left;
+    margin-left: 300px;
+
+
+}
 /*FOOTER*/
 
 #footer a{color: red}
