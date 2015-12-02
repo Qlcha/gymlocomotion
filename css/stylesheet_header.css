@@ -42,7 +42,7 @@ body {
 }
 
 #side {
-height: 800px;
+    height: 800px;
     width: 10%;
     position: fixed;
     margin: 0 0;
@@ -132,10 +132,10 @@ height: 800px;
 }
 
 #fixed {
-position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    height:23.5%; 
+    height:23.5%;
 }
 
 #mainmenu {
@@ -162,7 +162,7 @@ position: fixed;
 }
 
 a:active {
-color: red;
+    color: red;
 }
 
 #fixed a {
@@ -179,7 +179,7 @@ color: red;
 }
 
 #main {
-position: absolute;
+    position: absolute;
     padding: 0px;
     margin-left: 2.5%;
     margin-top: 25%;
@@ -191,26 +191,105 @@ position: absolute;
 }
 
 #footer p{
-color: red;
-font-weight: bold;
+    color: red;
+    font-weight: bold;
     display: inline-block;
     margin-bottom:2%;
     position: absolute
 }
 
 #footer>p+p {
-text-decoration: underline;
+    text-decoration: underline;
     margin-left: 90.6%;
 }
 
 /*ACCUEIL*/
+
+/*code du slider*/
+
+.container{
+    width:800px;
+    height:400px;
+    padding:20px;
+    border:1px solid gray;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background: black;
+    text-align: center;
+    margin-left: 50px;
+}
+.slider_wrapper{
+    overflow: hidden;
+    position:relative;
+    height:280px;
+    top:50px;
+}
+#image_slider{
+
+    position: relative;
+    height: auto;
+    list-style: none;
+    overflow: hidden;
+    float: left;
+    padding:0px;
+    margin:0px;
+
+}
+
+#image_slider li{
+    position: relative;
+    float: left;
+}
+.nvgt{
+    position:absolute;
+    top: 120px;
+    height: 50px;
+    width: 30px;
+    opacity: 0.6;
+}
+.nvgt:hover{
+    opacity: 0.9;
+}
+#prev{
+    background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/prev.png') no-repeat center;
+    left: 0px;
+}
+#next{
+    background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/next.png') no-repeat center;
+    right: 0px;
+}
+#pager{
+    padding:0px;
+    position:relative;
+    height:50px;
+    margin:auto;
+    margin-top:60px;
+}
+#pager li{
+    padding: 0px;
+    margin:5px;
+    width:20px;
+    height:20px;
+    border:1px solid white;
+    color:white;
+    list-style: none;
+    opacity: 0.6;
+    float:left;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#pager li:hover{
+    opacity:0.9;
+}
+/*fin du code silder*/
 
 #locov {
     margin: 0 auto;
     position: relative;
     width: 800px;
     height: 350px;
-    top: 100px;
+    top: 10px;
 }
 
 #locov img {
@@ -276,20 +355,19 @@ text-decoration: underline;
 #contenu p {
     color: black;
     position: absolute;
-    right: 140px;
+    right: 90px;
 }
 
-#contenu {
-    position: relative;
-    background-color: #fee801;
-    height: 38%;
-    margin-top: 50px;
-    background-image: url(images/dumbells.png);
-    background-repeat: no-repeat;
-    border: 2px solid red;
-    margin-left: 30px;
-    margin-right: 100px;
+h4 {
+    position: absolute;
+    top: 110px;
+    right: 60px;
+    font-size: 22px;
+    text-align: center;
+    font-style: italic;
+    color: red;
 }
+
 
 #para {
     top: 30px;
@@ -297,33 +375,34 @@ text-decoration: underline;
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
+    position: relative;
+    left: 280px;
 }
 
-h4 {
-    position: absolute;
-    top: 70px;
-    right: 60px;
-    font-size: 22px;
-    text-align: center;
-    color: red;
-    font-style: italic;
-}
-
-#par {
+#par, #bouton {
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
-    margin-left: 2px;
 }
 
 #contenu img {
     position: absolute;
-    height: 90%;
+    height: 80%;
     width: 150px;
     border: none;
-    top: 7px;
-    margin-left: 30px;
+    top: 18px;
+    margin-left: 10px;
+}
+
+#contenu #bouton{
+    position: absolute;
+    right: 220px;
+    top: 95px;
+}
+#bouton #oui{
+    position: relative;
+    left: 35px;
 }
 
 #pas {
@@ -337,6 +416,32 @@ h4 {
     width: 70%;
     font-size: 20px;
     bottom: 300px;
+}
+
+#contenu {
+    position: relative;
+    background-color: #fee801;
+    height: 50%;
+    margin-top: 50px;
+    background-image: url(images/dumbells.png);
+    background-repeat: no-repeat;
+    border: 2px solid red;
+    margin-left: 30px;
+    margin-right: 110px;
+    bottom: 30px;
+}
+
+
+#transforme{
+    color: red;
+    position:relative;
+    background-color: aqua;
+    height: 250px;
+    margin-top: 21%;
+}
+#transforme h2{
+    position: absolute;
+    left: 35%;
 }
 #fin{
     display: inline-block;
@@ -367,14 +472,14 @@ h4 {
 /*BOUTIQUE*/
 
 .description {
-display: inline-block;
+    display: inline-block;
     width: 50%;
     vertical-align: top;
     margin-bottom: 0;
 }
 
 .produit {
-display: inline-block;
+    display: inline-block;
     width: 300px;
 }
 
@@ -382,37 +487,37 @@ display: inline-block;
 }
 
 .prix>h3 {
-display: inline;
+    display: inline;
     width: 50px;
 }
 
 .prix>h2 {
-display: inline;
+    display: inline;
     width: 50px;
     margin-left: 30px;
     color: red;
 }
 
 .livrason {
-font-size: 15px;
+    font-size: 15px;
     margin-top: 40px;
 }
 
 li{list-style-type: none;
-    
-    
+
+
 }
 
 .boutique{border: 3px solid red;
     margin-top: 1%;
     margin-right: auto;
     margin-left: auto;
-        
-    
+
+
 }
 
 #main ul{
-    padding: 0; 
+    padding: 0;
 }
 
 /*STYLESHEETS OLGA*/
@@ -420,33 +525,33 @@ li{list-style-type: none;
 /*GALERIE*/
 
 #galerie>ul {
-list-style: none;
+    list-style: none;
 }
 
 #galerie>ul>li {
     display: inline-block;
-width: 300px;
+    width: 300px;
     margin-bottom: 50px;
     margin-left: 15px;
-    
+
 }
 #galerie img{border: 3px solid red;}
 
 /*HORAIRE*/
 
 #headlinetable {
-text-align: center;
+    text-align: center;
 }
 
 #headlinetable h1 {
-color: red;
+    color: red;
     font-style: italic;
     margin-top: 15px;
     padding: 0;
 }
 
 #headlinetable h2 {
-font-style: italic;
+    font-style: italic;
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
@@ -466,75 +571,75 @@ th {
     color: grey;
     font-weight: bold;
     font-style: italic;
-    border-bottom: 1px solid grey;  
+    border-bottom: 1px solid grey;
 }
 
 td {
-font-style: italic;
+    font-style: italic;
     font-size: 15px;
     line-height: 25px;
     width: 10%;
     padding: 10px;
-        border-bottom: 1px solid grey;  
+    border-bottom: 1px solid grey;
     padding: 8px 2px;
-    
+
 }
 
 td:hover {
-  background: #ccddff;
+    background: #ccddff;
 }
 
 /*PRODUIT*/
 
 #description5 {
-display: inline-block;
+    display: inline-block;
     width: 60%;
     vertical-align: top;
     margin-bottom: 0;
 }
 
 h3+p {
-color: gray;
+    color: gray;
     font-style: italic;
 }
 
 #leanfit {
-display: inline-block;
+    display: inline-block;
     width: 300px;
 }
 
 #leanfit >h3 {
-color:red; 
+    color:red;
     font-style: italic;
 }
 
 #prix>h3 {
-display: inline;
+    display: inline;
     width: 50px;
 }
 
 #prix>h2 {
-display: inline;
+    display: inline;
     width: 50px;
     margin-left: 30px;
     color: red;
 }
 
 #livrason {
-font-size: 15px;
+    font-size: 15px;
     margin-bottom: 0;
     padding: 0;
 }
 
 #caracteristiques+p {
-font-weight: bold;
+    font-weight: bold;
     font-style: italic;
     padding: 0;
     margin: 0;
 }
 
 #caracteristiques >h5 {
-color: red;
+    color: red;
     font-style: italic;
     font-size: 16px;
     padding: 0;
@@ -543,26 +648,26 @@ color: red;
 }
 
 #livrason {
-font-size: 12px;
+    font-size: 12px;
 }
 
 #caracteristiques >p, ul {
-font-size: 15px;
+    font-size: 15px;
     font-style: italic;
     padding: 5px;
     margin: 0;
 }
 
 h5+ul {
-list-style: circle;
+    list-style: circle;
 }
 
 /*FORMULAIRE*/
 
-#formulaire{
-       width: 90%;
-       margin: 0 auto; 
-   }
+formulaire{
+    width: 90%;
+    margin: 0 auto;
+}
 
 legend{color: red;
     text-align: center;
@@ -572,7 +677,7 @@ legend{color: red;
     margin-bottom: 40px;
 }
 
-#formulaire fieldset{
+fieldset{
     width: 70%;
     margin: 0 auto;
     border: 5px solid red;
@@ -594,7 +699,7 @@ legend{color: red;
     margin-left: 40px;
 }
 #courriel{
-   position: relative;
+    position: relative;
     right: 8px;
 }
 #rad{
@@ -605,7 +710,7 @@ legend{color: red;
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
-  #groupe{
+#groupe{
     position: relative;
     right: 155px;
     top: 20px;
@@ -617,7 +722,7 @@ legend{color: red;
     font-style: italic;
     font-weight: bold;
     font-family: Arial, sans-serif;
-    
+
 }
 #temps{
     font-family: Arial, sans-serif;
@@ -648,59 +753,6 @@ legend{color: red;
 #soumettre{
     margin-left: 80px;
 }
-
-/* FITNESS TEST*/
-
-#fittest fieldset{
-    border: 3px solid red;
-    text-align: center;
-}
-
-.button_test {
-    background-color: red;
-    border:2px solid black;
-    display:inline-block;
-    color:white;
-    font-family:Arial;
-    font-size:14px;
-    /*font-weight:bold;*/
-    font-style: italic;
-    height:30px;
-    line-height:27px;
-    width:130px;
-    text-decoration:none;
-    text-align:center;
-
-}
-.button_test:hover {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911) );
-    background:-moz-linear-gradient( center top, #f2ab1e 5%, #f0c911 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#f0c911');
-    background-color:#f2ab1e;
-}.button_test:active {
-     position:relative;
-     top:1px;
- }
-
-#fittest div {
-    margin-top: 30px;
-    border-bottom: 1px solid black;
-}
-
-#fittest li {
-    padding: 10px;
-    text-align: left;
-    margin-left: 300px;
-
-}
-
-.test_result p {
-    text-align: left;
-    margin-left: 300px;
-
-
-}
-/*FOOTER*/
 
 #footer a{color: red}
 
