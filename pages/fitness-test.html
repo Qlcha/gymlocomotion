@@ -4,242 +4,300 @@
 
 <head>
     <title>Fitness-test</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet_header.css" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet_header.css"/>
 
 </head>
 
 <body>
-    <div id="wrapper">
-        
-<div id="fixed">        
+<div id="wrapper">
+
+    <div id="fixed">
         <p id="callus">call us: 514 515 1146</p>
+
         <p id="engfr">Eng / Fr</p>
-        <img id="imagetop" src="../images/header%20top.jpg" alt="headertop" />
-        <img id="logo" src="../images/logo_gym_siteweb.png" alt="logo" />
+        <img id="imagetop" src="../images/header%20top.jpg" alt="headertop"/>
+        <img id="logo" src="../images/logo_gym_siteweb.png" alt="logo"/>
 
         <div id="topslogan">
             <h2 id="wepush">we push your limits</h2>
-            <img id="lineblanche" src="../images/line%20blanche.jpg" alt="lineblanche" />
+            <img id="lineblanche" src="../images/line%20blanche.jpg" alt="lineblanche"/>
+
             <h2 id="onpousse">on pousse vos limites</h2>
         </div>
 
         <div id="side">
-            <img id="imageside" src="../images/header%20side.jpg" alt="headerside" />
+            <img id="imageside" src="../images/header%20side.jpg" alt="headerside"/>
 
             <div id="icons">
-                <a href="https://www.facebook.com/"> <img src="../images/icons/facebook_small.png" alt="facebook" /></a>
-                <a href="https://www.twitter.com/"> <img src="../images/icons/twitter-small.png" alt="twitter" /></a>
-                <a href="https://www.instagram.com/"> <img src="../images/icons/Instagram-small.png" alt="insta" /></a>
-                <a href="https://www.youtube.com/"> <img src="../images/icons/YouTube-small.png" alt="youtube" /></a>
+                <a href="https://www.facebook.com/"> <img src="../images/icons/facebook_small.png" alt="facebook"/></a>
+                <a href="https://www.twitter.com/"> <img src="../images/icons/twitter-small.png" alt="twitter"/></a>
+                <a href="https://www.instagram.com/"> <img src="../images/icons/Instagram-small.png" alt="insta"/></a>
+                <a href="https://www.youtube.com/"> <img src="../images/icons/YouTube-small.png" alt="youtube"/></a>
             </div>
         </div>
-    
+
         <div id="mainmenu">
-                <ul id="menulist">
-                    <li><a href="../index.html">accueil</a></li>
-                    <li><a href="galerie.html">gyms</a></li>
-                    <li><a href="#">equipe</a></li>
-                    <li><a href="fitness-test.html">fit test</a></li>
-                    <li><a href="horaire.html">horaire</a></li>
-                    <li><a href="boutique.html">boutique</a></li>
-                    <li><a href="formulaire.html">contact</a></li>
+            <ul id="menulist">
+                <li><a href="../index.html">accueil</a></li>
+                <li><a href="galerie.html">gyms</a></li>
+                <li><a href="#">equipe</a></li>
+                <li><a href="fitness-test.html">fit test</a></li>
+                <li><a href="horaire.html">horaire</a></li>
+                <li><a href="boutique.html">boutique</a></li>
+                <li><a href="formulaire.html">contact</a></li>
 
-                </ul>
-            
-         
-</div>
+            </ul>
+
+
+        </div>
     </div>
-        
-        <div id="main">
-               
-<div id="fittest">
 
-    <form action="#" method="post">
+    <div id="main">
 
-        <fieldset>
+        <div id="fittest">
 
-            <div id="start_fittest">
+            <form action="#" method="post">
 
-                <h5>Nous vous suggérons passer notre questionnaire en ligne avec les questions liées à votre niveau
-                    de forme physique et de vos objectifs. Ce serra nous aider à vous offrir le programme d'eintraînement
-                    optimale pour vous.</h5>
+                <fieldset>
+
+                    <div id="start_fittest">
+
+                        <h5>Nous vous suggérons passer notre questionnaire en ligne avec les questions liées à votre
+                            niveau
+                            de forme physique et de vos objectifs. Ce serra nous aider à vous offrir le programme
+                            d'eintraînement
+                            optimale pour vous.</h5>
 
                  <span>
-                <input type="submit" value="COMMENCER" class="button_test" />
+                <input type="button" value="COMMENCER" id="btn_commencer" class="button_test"/>
                <!--<input  type="submit" value="NON, MERCI" class="button_test"/>-->
-                     <a href="../index.html" class="button_test" >NON, MERCI</a>
+                     <a href="../index.html" class="button_test">NON, MERCI</a>
 
 
             </span>
 
-            </div>
+                    </div>
 
-            <div class="question" id="q1">
+                    <div id="questionnaire">
 
-                    <h5>Votre genre:</h5>
-                    <input type="radio" name="genre" value="FEMME" checked="checked"/><label>Femme</label>
+                        <div class="question" id="q1">
 
-                <input type="radio" name="genre" value="HOMME"/><label>Homme</label>
+                            <h5>Votre genre:</h5>
+                            <input type="radio" name="genre" value="FEMME" checked="checked"/><label>Femme</label>
 
-
-                <h5>Votre groupe d'age?</h5>
-                <select id="age" name="age" class="#">
-                        <option>Moins de 18 ans</option>
-                        <option>18-25 ans</option>
-                        <option>26-35 ans</option>
-                        <option>36-45 ans</option>
-                        <option>Plus de 45 ans</option>
-
-                </select>
+                            <input type="radio" name="genre" value="HOMME"/><label>Homme</label>
 
 
-           </div>
+                            <h5>Votre groupe d'age?</h5>
+                            <select id="age" name="age" class="#">
+                                <option selected='q1(1)'>Moins de 18 ans</option>
+                                <option selected='q1(2)'>18-25 ans</option>
+                                <option selected='q1(3)'>26-35 ans</option>
+                                <option selected='q1(4)'>36-45 ans</option>
+                                <option selected='q1(5)'>Plus de 45 ans</option>
 
-            <div class="question" id="q2">
-                <label for="niveau"><h5>Votre niveau d'activité physique</h5></label>
-                <select id="niveau" name="niveau" class="#">
-                    <option>Trés active</option>
-                    <option>Plus active que avant</option>
-                    <option>Medium</option>
-                    <option>Pas assez actif</option>
-                    <option>Fiable</option>
-</select>
-
-                <h5>Comment vous vous déplacez quotidennement? </h5>
-                <input type="checkbox" id="auto" name="auto"/>
-                <label for="auto">Auto privée</label>
+                            </select>
 
 
-                <input type="checkbox" id="transport" name="transport"/>
-                <label for="transport">Transport public</label>
+                        </div>
 
-                <input type="checkbox" id="pied" name="pied"/>
-                <label for="pied">A pied</label>
+                        <div class="question" id="q2">
+                            <h5>Votre niveau d'activité physique</h5>
+                            <select id="niveau" name="niveau" class="#">
+                                <option selected='q2(1)'>Trés active</option>
+                                <option selected='q2(2)'>Plus active que avant</option>
+                                <option selected='q2(3)'>Medium</option>
+                                <option selected='q2(4)'>Pas assez actif</option>
+                                <option selected='q2(5)'>Fiable</option>
+                            </select>
 
-            </div>
-
-
-            <div class="question" id="q3">
-
-
-                <h5>Êtes-vous satisfait de vos poids?</h5>
-            <li><input type="radio" name="poids" checked="checked"/><label>Oui, en general</label></li>
-            <li><input type="radio" name="poids" /><label>Je voudrais perdre un peu de poids</label></li>
-               <li> <input type="radio" name="poids" /><label>Je voudrais perdre de poids significativement</label></li>
-               <li><input type="radio" name="poids"/><label>Je voudrais prendre du poids</label></li>
+                            <h5>Comment vous vous déplacez quotidennement? </h5>
+                                <input type="checkbox" id="auto" name="auto"/>
+                                <label for="auto">Auto privée</label>
 
 
-            </div>
+                                <input type="checkbox" id="transport" name="transport"/>
+                                <label for="transport">Transport public</label>
 
-            <div class="question" id="q4">
+                                <input type="checkbox" id="pied" name="pied"/>
+                                <label for="pied">A pied</label>
 
-
-                <h5>Quel est le prémier objectif de votre entraînement?</h5>
-            <li><input type="radio" name="oblectif" checked="checked"/><label>Amélioration de l'apparence de mon corps</label></li>
-            <li><input type="radio" name="oblectif" /><label>Force et la fonctionnalité</label></li>
-                <li><input type="radio" name="oblectif" /><label>Endurance</label></li>
-                <li><input type="radio" name="oblectif"/><label>Sport pour le plaisir</label></li>
+                        </div>
 
 
-
-            </div>
-
-            <div class="question" id="q5">
-                <h5>Est-ce que vous avez des problemmes de la santé connus?</h5>
-            <li><input type="radio" name="problem" checked="checked"/><label>Non</label></li>
-           <li><input type="radio" name="problem" /><label>Cardio-vasculaire</label></li>
-               <li><input type="radio" name="problem" /><label>Musculo-squelettique</label></li>
-                <li><input type="radio" name="problem" /><label>L'autre. Décrivez-le:
-                <textarea rows="1" cols="30" name="commentaire"></textarea></label></li>
+                        <div class="question" id="q3">
 
 
-            </div>
+                            <h5>Êtes-vous satisfait de vos poids?</h5>
 
-            <div class="question"  id="q6">
-
-
-
-                <h5>Combien de fois par semaine voulez-vous vous eintraîner?</h5>
-                <li><input type="radio" name="frequence" checked="checked"/><label>3-4 fois</label></li>
-            <li><input type="radio" name="frequence"  /><label>2 fois ou moin</label></li>
-                <li><input type="radio" name="frequence" /><label>J'aimrais avoir d'activité chaque jour</label></li>
-                <li><input type="radio" name="frequence"/><label>Pas régulièrement</label></li>
-
-            </div>
+                            <li><input type="radio" name="poids" checked='q3(1)'/><label>Oui, en general</label></li>
+                            <li><input type="radio" name="poids" checked='q3(2)'/><label>Je voudrais perdre un peu de
+                                poids</label></li>
+                            <li><input type="radio" name="poids" checked='q3(3)'/><label>Je voudrais perdre de poids
+                                significativement</label></li>
+                            <li><input type="radio" name="poids" checked='q3(4)'/><label>Je voudrais prendre du
+                                poids</label></li>
 
 
+                        </div>
+
+                        <div class="question" id="q4">
 
 
-            <span>
-                <input type="submit" value="RÉCOMMENCER" id="effacer" class="button_test"/>
-                <input type="submit" value="SOUMETTRE" id="soumettre" class="button_test"/>
-            </span>
+                            <h5>Quel est le prémier objectif de votre entraînement?</h5>
+                            <li><input type="radio" name="oblectif" checked='q4(1)'/><label>Amélioration de l'apparence
+                                de mon corps</label></li>
+                            <li><input type="radio" name="oblectif" checked='q4(2)'/><label>Force et la
+                                fonctionnalité</label></li>
+                            <li><input type="radio" name="oblectif" checked='q4(3)'/><label>Endurance</label></li>
+                            <li><input type="radio" name="oblectif" checked='q4(4)'/><label>Sport pour le
+                                plaisir</label></li>
 
 
-            <div id="cardio" class="test_result">
-                <h5>Votre programme récommendé: CARDIO</h5>
-                <p>Fréquence: 2-4 heures par semaine;</p>
-                <p>But: perte de graisse, récomposition;</p>
-                <p><strong>Niveau d'activité:</strong> moyen</p>
-                <button class="button_test">VOIR HORAIRE</button>
+                        </div>
 
-            </div>
-
-            <div id="fonctional" class="test_result">
-                <h5>Votre programme récommendé: FONCTIONALITÉ</h5>
-                <p><strong>Fréquence:</strong> 2-4 heures par semaine;</p>
-                <p><strong>But:</strong> récomposition, accumulation de musculature;</p>
-                <p><strong>Niveau d'activité:</strong> haut;</p>
-                <button class="button_test">VOIR HORAIRE</button>
-
-            </div>
-
-            <div id="trainer" class="test_result">
-                <h5>Votre programme récommendé: Éntraînement avec entraîneur personnel</h5>
-                <p><strong>Fréquence:</strong> 2-4 heures par semaine;</p>
-                <p><strong>But:</strong> accumulation de musculature, force;</p>
-                <p><strong>Niveau d'activité:</strong> haut/ moyen</p>
-                <button class="button_test">PRENDRE RDV</button>
-
-            </div>
-
-            <div id="yoga" class="test_result">
-                <h5>Votre programme récommendé: YOGA / ZUMBA</h5>
-                <p><strong>Fréquence:</strong> 1 heures par semaine;</p>
-                <p><strong>But:</strong> maintenir l'activité physique sans impact fort;</p>
-                <p><strong>Niveau d'activité:</strong> moyen</p>
-
-                <button class="button_test">VOIR HORAIRE</button>
-
-            </div>
-
-            <h5>S'il vous plaît prenez un avis que le but de ce test en ligne est juste de donner idée générale
-                de la formation qui correspondent à vos réponses. Nous vous recommandons fortement que avant
-                de commencer un entraînement physique vous passez l'évaluation en personne avec notre kinesiolog.</h5>
+                        <div class="question" id="q5">
+                            <h5>Est-ce que vous avez des problemmes de la santé connus?</h5>
+                            <li><input type="radio" name="problem" checked='q5(1)'/><label>Non</label></li>
+                            <li><input type="radio" name="problem" checked='q5(2)'/><label>Cardio-vasculaire</label>
+                            </li>
+                            <li><input type="radio" name="problem" checked='q5(3)'/><label>Musculo-squelettique</label>
+                            </li>
+                            <li><input type="radio" name="problem" checked='q5(4)'/><label>L'autre. Décrivez-le:
+                                <textarea rows="1" cols="30" name="commentaire"></textarea></label></li>
 
 
-        </fieldset>
+                        </div>
+
+                        <div class="question" id="q6">
+
+
+                            <h5>Combien de fois par semaine voulez-vous vous eintraîner?</h5>
+                            <li><input type="radio" name="frequence" checked='q6(1)'/><label>3-4 fois</label></li>
+                            <li><input type="radio" name="frequence" checked='q6(2)'/><label>2 fois ou moin</label></li>
+                            <li><input type="radio" name="frequence" checked='q6(3)'/><label>J'aimrais avoir d'activité
+                                chaque jour</label></li>
+                            <li><input type="radio" name="frequence" checked='q6(4)'/><label>Pas régulièrement</label>
+                            </li>
+
+                        </div>
+
+                        <input type="button" id="next_question" value="NEXT" class="button_test" />
+
+                    </div>
 
 
 
-    </form>
 
 
 
+                    <div id="cardio" class="test_result">
+                        <h5>Votre programme récommendé: CARDIO*</h5>
+                        <img src="../images/gallerygym/8.jpg" alt="cardio"/>
+
+                        <p>Fréquence: 2-4 heures par semaine;</p>
+
+                        <p>But: perte de graisse, récomposition;</p>
+
+                        <p><strong>Niveau d'activité:</strong> moyen</p>
+
+                        <a href="horaire.html" class="button_test">VOIR HORAIRE</a>
+                        <a href="fitness-test.html" class="button_test">RÉCOMMENCER</a>
+
+                        <h6>* S'il vous plaît prenez un avis que le but de ce test en ligne est juste de donner idée
+                            générale
+                            de la formation qui correspondent à vos réponses. Nous vous recommandons fortement que avant
+                            de commencer un entraînement physique vous passez l'évaluation en personne avec notre
+                            kinesiolog.</h6>
+
+                    </div>
+
+                    <div id="fonctional" class="test_result">
+                        <h5>Votre programme récommendé: FONCTIONALITÉ*</h5>
+                        <img src="../images/gallerygym/9.jpg" alt="group"/>
+
+                        <p><strong>Fréquence:</strong> 2-4 heures par semaine;</p>
+
+                        <p><strong>But:</strong> récomposition, accumulation de musculature;</p>
+
+                        <p><strong>Niveau d'activité:</strong> haut;</p>
+
+                        <a href="horaire.html" class="button_test">VOIR HORAIRE</a>
+                        <a href="fitness-test.html" class="button_test">RÉCOMMENCER</a>
+
+                        <h6>* S'il vous plaît prenez un avis que le but de ce test en ligne est juste de donner idée
+                            générale
+                            de la formation qui correspondent à vos réponses. Nous vous recommandons fortement que avant
+                            de commencer un entraînement physique vous passez l'évaluation en personne avec notre
+                            kinesiolog.</h6>
+
+                    </div>
+
+                    <div id="trainer" class="test_result">
+                        <h5>Votre programme récommendé: Éntraînement avec entraîneur personnel*</h5>
+                        <img src="../images/gallerygym/nos%20services1.jpg" alt="trainer"/>
+
+                        <p><strong>Fréquence:</strong> 2-4 heures par semaine;</p>
+
+                        <p><strong>But:</strong> accumulation de musculature, force;</p>
+
+                        <p><strong>Niveau d'activité:</strong> haut/ moyen</p>
+
+                        <a href="formulaire.html" class="button_test">PRENDRE RDV</a>
+                        <a href="fitness-test.html" class="button_test">RÉCOMMENCER</a>
+
+                        <h6>* S'il vous plaît prenez un avis que le but de ce test en ligne est juste de donner idée
+                            générale
+                            de la formation qui correspondent à vos réponses. Nous vous recommandons fortement que avant
+                            de commencer un entraînement physique vous passez l'évaluation en personne avec notre
+                            kinesiolog.</h6>
+
+                    </div>
+
+                    <div id="yoga" class="test_result">
+                        <h5>Votre programme récommendé: YOGA / ZUMBA*</h5>
+                        <img src="../images/gallerygym/11.jpg" alt="yoga"/>
+
+                        <p><strong>Fréquence:</strong> 1 heures par semaine;</p>
+
+                        <p><strong>But:</strong> maintenir l'activité physique sans impact fort;</p>
+
+                        <p><strong>Niveau d'activité:</strong> moyen</p>
+
+
+                        <a href="horaire.html" class="button_test">VOIR HORAIRE</a>
+                        <a href="fitness-test.html" class="button_test">RÉCOMMENCER</a>
+
+                        <h6>* S'il vous plaît prenez un avis que le but de ce test en ligne est juste de donner idée
+                            générale
+                            de la formation qui correspondent à vos réponses. Nous vous recommandons fortement que avant
+                            de commencer un entraînement physique vous passez l'évaluation en personne avec notre
+                            kinesiolog.</h6>
+
+                    </div>
+
+
+                </fieldset>
+
+
+            </form>
+
+
+        </div>
+
+        <div id="footer">
+            <p>&copy;LocoMotion 2015</p>
+
+            <p><a href="#wrapper">Haut de page</a></p>
+
+        </div>
+
+    </div>
 </div>
-            
-            <div id="footer">
-                <p>&copy;LocoMotion 2015</p>
-                <p><a href="#wrapper">Haut de page</a></p>
-            
-            </div>
-        
-        </div>
-        </div>
 
 
-    <script src="../javascript/fittest.js"></script>
+<script src="../javascript/fittest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
