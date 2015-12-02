@@ -40,10 +40,10 @@
                     <li><a href="../index.html">accueil</a></li>
                     <li><a href="galerie.html">gyms</a></li>
                     <li><a href="#">equipe</a></li>
-                    <li><a href="#">services</a></li>
+                    <li><a href="fitness-test.html">fit test</a></li>
                     <li><a href="horaire.html">horaire</a></li>
                     <li><a href="boutique.html">boutique</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="formulaire.html">contact</a></li>
 
                 </ul>
             
@@ -75,9 +75,9 @@
             <div class="question" id="q1">
 
                     <h5>Votre genre:</h5>
-                    <input type="radio"  value="FEMME"/>Femme
+                    <input type="radio" name="genre" value="FEMME" checked="checked"/><label>Femme</label>
 
-                <input type="radio"  value="HOMME"/>Homme
+                <input type="radio" name="genre" value="HOMME"/><label>Homme</label>
 
 
                 <h5>Votre groupe d'age?</h5>
@@ -121,10 +121,10 @@
 
 
                 <h5>Êtes-vous satisfait de vos poids?</h5>
-            <li><input type="radio" />Oui, en general</li>
-            <li><input type="radio" />Je voudrais perdre un peu de poids</li>
-               <li> <input type="radio" />Je voudrais perdre de poids significativement</li>
-               <li><input type="radio" />Je voudrais prendre du poids</li>
+            <li><input type="radio" name="poids" checked="checked"/><label>Oui, en general</label></li>
+            <li><input type="radio" name="poids" /><label>Je voudrais perdre un peu de poids</label></li>
+               <li> <input type="radio" name="poids" /><label>Je voudrais perdre de poids significativement</label></li>
+               <li><input type="radio" name="poids"/><label>Je voudrais prendre du poids</label></li>
 
 
             </div>
@@ -133,10 +133,10 @@
 
 
                 <h5>Quel est le prémier objectif de votre entraînement?</h5>
-            <li><input type="radio" />Amélioration de l'apparence de mon corps</li>
-            <li><input type="radio" />Force et la fonctionnalité</li>
-                <li><input type="radio" />Endurance</li>
-                <li><input type="radio" />Sport pour le plaisir</li>
+            <li><input type="radio" name="oblectif" checked="checked"/><label>Amélioration de l'apparence de mon corps</label></li>
+            <li><input type="radio" name="oblectif" /><label>Force et la fonctionnalité</label></li>
+                <li><input type="radio" name="oblectif" /><label>Endurance</label></li>
+                <li><input type="radio" name="oblectif"/><label>Sport pour le plaisir</label></li>
 
 
 
@@ -144,11 +144,11 @@
 
             <div class="question" id="q5">
                 <h5>Est-ce que vous avez des problemmes de la santé connus?</h5>
-            <li><input type="radio" />Cardio-vasculaire</li>
-           <li><input type="radio" /></span>Musculo-squelettique</li>
-               <li><input type="radio" /></span>Endocrinologie</li>
-                <li><input type="radio" />L'autre. Décrivez-le:
-                <textarea rows="1" cols="30" name="commentaire"></textarea></li>
+            <li><input type="radio" name="problem" checked="checked"/><label>Non</label></li>
+           <li><input type="radio" name="problem" /><label>Cardio-vasculaire</label></li>
+               <li><input type="radio" name="problem" /><label>Musculo-squelettique</label></li>
+                <li><input type="radio" name="problem" /><label>L'autre. Décrivez-le:
+                <textarea rows="1" cols="30" name="commentaire"></textarea></label></li>
 
 
             </div>
@@ -158,10 +158,10 @@
 
 
                 <h5>Combien de fois par semaine voulez-vous vous eintraîner?</h5>
-            <li><input type="radio" />2 fois ou moin</li>
-            <li><input type="radio" />3-4 fois</li>
-                <li><input type="radio" />J'aimrais avoir d'activité chaque jour</li>
-                <li><input type="radio" />Pas régulièrement</li>
+                <li><input type="radio" name="frequence" checked="checked"/><label>3-4 fois</label></li>
+            <li><input type="radio" name="frequence"  /><label>2 fois ou moin</label></li>
+                <li><input type="radio" name="frequence" /><label>J'aimrais avoir d'activité chaque jour</label></li>
+                <li><input type="radio" name="frequence"/><label>Pas régulièrement</label></li>
 
             </div>
 
