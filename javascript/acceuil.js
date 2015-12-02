@@ -112,8 +112,8 @@ window.onload = init;
 
 
 Premier = new Image(250,340);
-Premier.src = "images/gallerygym/transformation/transform1.jpg";
+Premier.src = "images/gallerygym/transformation/femme-avant.png";
 Second = new Image(250,340);
-Second.src = "images/gallerygym/transformation/transform2.jpg";
+Second.src = "images/gallerygym/transformation/femme-après.png";
 
 //fin image dynamique

@@ -289,12 +289,12 @@ a:active {
     position: relative;
     width: 800px;
     height: 350px;
-    top: 10px;
+    top: 15px;
 }
 
 #locov img {
     width: 230px;
-    height: 159px;
+    height: 160px;
     border: 2px solid red;
 }
 
@@ -326,14 +326,14 @@ a:active {
 
 #bloc1 {
     float: right;
-    bottom: 173px;
+    bottom: 170px;
     margin-right: 250px;
 }
 
 #bloc2 {
     float: right;
     margin-left: 500px;
-    bottom: 344px;
+    bottom: 338px;
 }
 
 #bloc4 {
@@ -344,12 +344,12 @@ a:active {
 
 #bloc5 {
     float: right;
-    bottom: 502px;
+    bottom: 500px;
     margin-left: 260px;
 }
 
 #bloc3 {
-    top: 14px;
+    top: 8px;
 }
 
 #contenu p {
@@ -415,7 +415,7 @@ h4 {
     display: inline-block;
     width: 70%;
     font-size: 20px;
-    bottom: 300px;
+   /* bottom: 300px;*/
 }
 
 #contenu {
@@ -441,7 +441,16 @@ h4 {
 }
 #transforme h2{
     position: absolute;
-    left: 35%;
+    left: 38%;
+    font-family: arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+#transforme img{
+   position: relative;
+    top: 20%;
+    height: 80%;
+    width: 25%;
 }
 #fin{
     display: inline-block;
