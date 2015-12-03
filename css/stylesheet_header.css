@@ -194,30 +194,36 @@ a:active {
     color: red;
     font-weight: bold;
     display: inline-block;
+    width: 15%;
     margin-bottom:2%;
     position: absolute
 }
 
 #footer>p+p {
     text-decoration: underline;
-    margin-left: 90.6%;
+    margin-left: 85%;
 }
 
+#footer p span{
+   position: relative;
+    left: 76px;
+    bottom: 18.5px;
+}
 /*ACCUEIL*/
 
 /*code du slider*/
 
 .container{
-    width:800px;
+    width:734px;
     height:400px;
     padding:20px;
     border:1px solid gray;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
-    background: black;
+     background: gray;
     text-align: center;
-    margin-left: 50px;
+
 }
 .slider_wrapper{
     overflow: hidden;
@@ -271,11 +277,12 @@ a:active {
     margin:5px;
     width:20px;
     height:20px;
-    border:1px solid white;
-    color:white;
+    border:3px solid red;
+    color:#000000;
     list-style: none;
     opacity: 0.6;
-    float:left;
+    /*float:left;*/
+    display: inline-block;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -289,7 +296,7 @@ a:active {
     position: relative;
     width: 800px;
     height: 350px;
-    top: 15px;
+    top: 5px;
 }
 
 #locov img {
@@ -344,7 +351,7 @@ a:active {
 
 #bloc5 {
     float: right;
-    bottom: 500px;
+    bottom: 502px;
     margin-left: 260px;
 }
 
@@ -413,9 +420,9 @@ h4 {
     position: relative;
     left: 120px;
     display: inline-block;
-    width: 70%;
+    width: 75%;
     font-size: 20px;
-   /* bottom: 300px;*/
+
 }
 
 #contenu {
@@ -428,16 +435,17 @@ h4 {
     border: 2px solid red;
     margin-left: 30px;
     margin-right: 110px;
-    bottom: 30px;
+    bottom: 37px;
 }
 
 
 #transforme{
     color: red;
-    position:relative;
     background-color: aqua;
-    height: 250px;
-    margin-top: 21%;
+    height: 310px;
+    width: 87%;
+    margin-top: 27%;
+    margin-left: 9%;
 }
 #transforme h2{
     position: absolute;
@@ -447,17 +455,16 @@ h4 {
     font-weight: bold;
 }
 #transforme img{
-   position: relative;
-    top: 20%;
-    height: 80%;
-    width: 25%;
+    position: absolute;
+    margin-top: 62px;
+    width: 32%;
+    border: none;
 }
 #fin{
     display: inline-block;
     position: relative;
-    bottom: 120px;
     text-align: center;
-    left: 50px;
+    left: 15px;
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -469,12 +476,38 @@ h4 {
     display: inline-block;
     width: 280px;
     vertical-align: top;
+    font-size: 13px;
 }
 
 #fin2
 {
     margin-left: 30px;
     margin-right: 30px;
+}
+#tableau td{
+    font-family: arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11px;
+}
+#ligtbox img{
+height: 40px;
+}
+#mail img{
+    height: 55px;
+}
+  #ligtbox h3, p{
+   text-align: center;
+}
+#ligtbox #email, #mail{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    padding-left: 30px;
+}
+#mail{
+
 }
 
 
