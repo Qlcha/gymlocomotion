@@ -689,7 +689,7 @@ legend{color: red;
 fieldset{
     width: 70%;
     margin: 0 auto;
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     text-align: center;
     margin-top:50px;
 }
@@ -766,7 +766,7 @@ fieldset{
 /* FITNESS TEST*/
 
 #fittest fieldset{
-    border: 3px solid red;
+   /* border: 3px solid red;*/
     text-align: center;
 }
 
@@ -784,6 +784,7 @@ fieldset{
     width:130px;
     text-decoration:none;
     text-align:center;
+    margin-top: 20px;
 
 }
 .button_test:hover {
@@ -798,7 +799,7 @@ fieldset{
 
 #fittest div {
     margin-top: 30px;
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
 }
 
 #fittest li {
