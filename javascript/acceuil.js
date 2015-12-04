@@ -116,4 +116,9 @@ Premier.src = "images/gallerygym/transformation/femme-avant.png";
 Second = new Image(250,340);
 Second.src = "images/gallerygym/transformation/femme-après.png";
 
+/*troisieme = new Image(250,340);
+troisieme.src = "images/gallerygym/transformation/homme-avant.png";
+quatrieme = new Image(250,340);
+quatrieme.src = "images/gallerygym/transformation/homme-après.png";*/
+
 //fin image dynamique
