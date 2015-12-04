@@ -2,7 +2,7 @@
  * Created by osharygi on 2015-12-04.
  */
 
-"use strict";
+
 
 console.log("Hi");
 
