@@ -554,7 +554,7 @@ h4 {
 
 #transforme{
     position: relative;
-    margin-top: 27%;
+    margin-top: 22%;
     left: 11%;
     width: 800px;
     height: 340px;
@@ -593,7 +593,7 @@ h4 {
     color: red;
     position: relative;
     margin-top: 10% ;
-    left: 150px;
+    left: 250px;
     display: inline-block;
     width: 75%;
     font-size: 20px;
@@ -603,7 +603,7 @@ h4 {
 
     position: relative;
     margin: 0 auto;
-    left: 16%;
+    left: 18%;
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -1026,10 +1026,15 @@ fieldset{
 
 }
 #nom2{
-   position: relative;
+   position: absolute;
     z-index: 2;
-
-    top: 25%;
+    top: 10%;
+    left: 8%;
+    font-family: arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    text-align: center;
 }
 
 #nutri p{
@@ -1039,9 +1044,34 @@ fieldset{
 #nutri h2{
     text-align: center;
     color: red;
-    margin-top: 7%;
+    margin-top: 5%;
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
 }
+#flash {
+    -webkit-animation: blink 5s infinite;
+    -moz-animation:    blink 5s infinite;
+    -ms-animation:     blink 5s infinite;
+}
 
+@-webkit-keyframes blink {
+    0%   { color:red; }
+    50%  {color:black;}
+    100% { color:blue; }
+}
+@-moz-keyframes blink {
+    0%   { color:red; }
+    50%  {color:black;}
+    100% { color:blue; }
+}
+@-ms-keyframes blink {
+    0%   { color:red; }
+    50%  {color:black;}
+    100% { color:blue; }
+}
+.gras{
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}

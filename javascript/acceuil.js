@@ -37,39 +37,3 @@ function affiche1(){
 }
 //fin lightbox
 
-//mettre le code flash sur le titre h2
-
-function titre(){
-   var couleur = document.getElementById('flash');
-
-// The JavaScript Source!! http://javascript.internet.com
-    function initArray() {
-        this.length = initArray.arguments.length;
-        for (var i = 0; i < this.length; i++) {
-            this[i] = initArray.arguments[i];
-        }
-    }
-
-     couleur = "PROFESSIONNELS ACCRÉDITÉS";
-    var x = 0;
-    var color = new initArray(
-        "red",
-        "blue",
-        "green",
-        "black"
-    );
-
-    {
-        document.write('<div id="c" align="center">'+ctext+'</div>');
-    }
-    function chcolor(){
-        {
-            document.all.c.style.color = color[x];
-        }
-        (x < color.length-1) ? x++ : x = 0;
-    }
-    setInterval("chcolor()",1000);
-
-
-}
-//fin du flash titre h2
