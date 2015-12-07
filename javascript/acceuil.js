@@ -40,6 +40,5 @@ function premiere_lettre(){
 var mot = document.getElementById("majuscule");
 
 document.write(nom.charAt(0).toUpperCase());
-
 }
 
