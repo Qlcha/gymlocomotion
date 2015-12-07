@@ -635,7 +635,7 @@ h4 {
     text-align: center;
 }
 #tableau li{
-    font-size: 8px;
+    font-size: 10px;
 }
 #ligtbox {
     text-align: center;
@@ -1004,7 +1004,7 @@ fieldset{
  #nutrition img {
        width: 100%;
        text-align: center;
-       margin-top: 10%;
+       margin-top: 5%;
        border: 2px solid red;
        position: relative;
        z-index: 1;
@@ -1012,14 +1012,22 @@ fieldset{
 #nom1{
     position: absolute;
     z-index: 2;
-    bottom: 65%;
+    top: 22%;
+    left: 72%;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+
 }
 #nom2{
    position: relative;
     z-index: 2;
-    left: 25%;
-    bottom: 65%;
+
+    top: 25%;
 }
+
 #nutri p{
     text-align: justify;
     line-height: 2;

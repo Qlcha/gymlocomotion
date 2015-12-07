@@ -37,16 +37,6 @@ function affiche1(){
 }
 //fin lightbox
 
-//mettre en majuscule la 1ère lettre du paragraphe
-
-function premiere_lettre(){
-
-var mot = document.getElementById("majuscule").value;
-
-mot.charAt(0).toUpperCase();
-}
-//fin de la majuscule
-
 //mettre le code flash sur le titre h2
 
 function titre(){
@@ -60,7 +50,7 @@ function titre(){
         }
     }
 
-    var couleur = "PROFESSIONNELS ACCRÉDITÉS";
+     couleur = "PROFESSIONNELS ACCRÉDITÉS";
     var x = 0;
     var color = new initArray(
         "red",
