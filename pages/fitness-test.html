@@ -71,7 +71,6 @@
 
                  <span>
                 <input type="button" value="COMMENCER" id="btn_commencer" class="button_test"/>
-               <!--<input  type="submit" value="NON, MERCI" class="button_test"/>-->
                      <a href="../index.html" class="button_test">NON, MERCI</a>
 
 
@@ -83,45 +82,28 @@
 
                         <div class="question" id="q1">
 
-                            <h5>Votre genre:</h5>
-                            <input type="radio" name="genre" value="FEMME" checked="checked"/><label>Femme</label>
-
-                            <input type="radio" name="genre" value="HOMME"/><label>Homme</label>
-
 
                             <h5>Votre groupe d'age?</h5>
-                            <select id="age" name="age" class="#">
-                                <option selected='q1(1)'>Moins de 18 ans</option>
-                                <option selected='q1(2)'>18-25 ans</option>
-                                <option selected='q1(3)'>26-35 ans</option>
-                                <option selected='q1(4)'>36-45 ans</option>
-                                <option selected='q1(5)'>Plus de 45 ans</option>
 
-                            </select>
+                            <li><input type="radio" name="q1" value="1"/><label>Moins de 18 ans</label></li>
+                            <li><input type="radio" name="q1" value="2"/><label>18-25 ans</label></li>
+                            <li><input type="radio" name="q1" value="3"/><label>26-35 ans</label></li>
+                            <li><input type="radio" name="q1" value="4"/><label>36-45 ans</label></li>
+                            <li><input type="radio" name="q1" value="5"/><label>Plus de 45 ans</label></li>
 
 
                         </div>
 
                         <div class="question" id="q2">
+
                             <h5>Votre niveau d'activité physique</h5>
-                            <select id="niveau" name="niveau" class="#">
-                                <option selected='q2(1)'>Trés active</option>
-                                <option selected='q2(2)'>Plus active que avant</option>
-                                <option selected='q2(3)'>Medium</option>
-                                <option selected='q2(4)'>Pas assez actif</option>
-                                <option selected='q2(5)'>Fiable</option>
-                            </select>
 
-                            <h5>Comment vous vous déplacez quotidennement? </h5>
-                                <input type="checkbox" id="auto" name="auto"/>
-                                <label for="auto">Auto privée</label>
+                            <li><input type="radio" name="q2" value="1"/><label>Trés active</label></li>
+                            <li><input type="radio" name="q2" value="2"/><label>Plus active que avant</label></li>
+                            <li><input type="radio" name="q2" value="3"/><label>Medium</label></li>
+                            <li><input type="radio" name="q2" value="4"/><label>Pas assez actif</label></li>
+                            <li><input type="radio" name="q2" value="5"/><label>Fiable</label></li>
 
-
-                                <input type="checkbox" id="transport" name="transport"/>
-                                <label for="transport">Transport public</label>
-
-                                <input type="checkbox" id="pied" name="pied"/>
-                                <label for="pied">A pied</label>
 
                         </div>
 
@@ -131,12 +113,12 @@
 
                             <h5>Êtes-vous satisfait de vos poids?</h5>
 
-                            <li><input type="radio" name="poids" checked='q3(1)'/><label>Oui, en general</label></li>
-                            <li><input type="radio" name="poids" checked='q3(2)'/><label>Je voudrais perdre un peu de
+                            <li><input type="radio" name="q3" value="1"/><label>Oui, en general</label></li>
+                            <li><input type="radio" name="q3" value="2"/><label>Je voudrais perdre un peu de
                                 poids</label></li>
-                            <li><input type="radio" name="poids" checked='q3(3)'/><label>Je voudrais perdre de poids
+                            <li><input type="radio" name="q3" value="3"/><label>Je voudrais perdre de poids
                                 significativement</label></li>
-                            <li><input type="radio" name="poids" checked='q3(4)'/><label>Je voudrais prendre du
+                            <li><input type="radio" name="q3" value="4"/><label>Je voudrais prendre du
                                 poids</label></li>
 
 
@@ -146,12 +128,12 @@
 
 
                             <h5>Quel est le prémier objectif de votre entraînement?</h5>
-                            <li><input type="radio" name="oblectif" checked='q4(1)'/><label>Amélioration de l'apparence
+                            <li><input type="radio" name="q4" value="1"/><label>Amélioration de l'apparence
                                 de mon corps</label></li>
-                            <li><input type="radio" name="oblectif" checked='q4(2)'/><label>Force et la
+                            <li><input type="radio" name="q4" value="2"/><label>Force et la
                                 fonctionnalité</label></li>
-                            <li><input type="radio" name="oblectif" checked='q4(3)'/><label>Endurance</label></li>
-                            <li><input type="radio" name="oblectif" checked='q4(4)'/><label>Sport pour le
+                            <li><input type="radio" name="q4" value="3"/><label>Endurance</label></li>
+                            <li><input type="radio" name="q4" value="4"/><label>Sport pour le
                                 plaisir</label></li>
 
 
@@ -159,12 +141,12 @@
 
                         <div class="question" id="q5">
                             <h5>Est-ce que vous avez des problemmes de la santé connus?</h5>
-                            <li><input type="radio" name="problem" checked='q5(1)'/><label>Non</label></li>
-                            <li><input type="radio" name="problem" checked='q5(2)'/><label>Cardio-vasculaire</label>
+                            <li><input type="radio" name="q5" value="1"/><label>Non</label></li>
+                            <li><input type="radio" name="q5" value="2"/><label>Cardio-vasculaire</label>
                             </li>
-                            <li><input type="radio" name="problem" checked='q5(3)'/><label>Musculo-squelettique</label>
+                            <li><input type="radio" name="q5" value="3"/><label>Musculo-squelettique</label>
                             </li>
-                            <li><input type="radio" name="problem" checked='q5(4)'/><label>L'autre. Décrivez-le:
+                            <li><input type="radio" name="q5" value="4"/><label>L'autre. Décrivez-le:
                                 <textarea rows="1" cols="30" name="commentaire"></textarea></label></li>
 
 
@@ -174,23 +156,20 @@
 
 
                             <h5>Combien de fois par semaine voulez-vous vous eintraîner?</h5>
-                            <li><input type="radio" name="frequence" checked='q6(1)'/><label>3-4 fois</label></li>
-                            <li><input type="radio" name="frequence" checked='q6(2)'/><label>2 fois ou moin</label></li>
-                            <li><input type="radio" name="frequence" checked='q6(3)'/><label>J'aimrais avoir d'activité
+                            <li><input type="radio" name="q6" value="1"/><label>3-4 fois</label></li>
+                            <li><input type="radio" name="q6" value="2"/><label>2 fois ou moin</label></li>
+                            <li><input type="radio" name="q6" value="3"/><label>J'aimrais avoir d'activité
                                 chaque jour</label></li>
-                            <li><input type="radio" name="frequence" checked='q6(4)'/><label>Pas régulièrement</label>
+                            <li><input type="radio" name="q6" value="4"/><label>Pas régulièrement</label>
                             </li>
 
                         </div>
 
-                        <input type="button" id="next_question" value="NEXT" class="button_test" />
+                        <input type="button" id="next_question" value="NEXT" class="button_test" /> <!--BUTTON NEXT -->
 
                     </div>
 
-
-
-
-
+<!--RESULTS-->
 
                     <div id="cardio" class="test_result">
                         <h5>Votre programme récommendé: CARDIO*</h5>
@@ -213,7 +192,7 @@
 
                     </div>
 
-                    <div id="fonctional" class="test_result">
+                    <div id="functional" class="test_result">
                         <h5>Votre programme récommendé: FONCTIONALITÉ*</h5>
                         <img src="../images/gallerygym/9.jpg" alt="group"/>
 
