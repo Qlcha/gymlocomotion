@@ -205,7 +205,7 @@ a:active {
 }
 
 #footer p span{
-   position: relative;
+    position: relative;
 }
 /*ACCUEIL*/
 
@@ -213,12 +213,7 @@ a:active {
 #slides {
     display: none;
 }
-body {
-    background-image: url(http://subtlepatterns.com/patterns/dark_wall.png);
-    background-repeat: repeat;
-    height: 500px;
-    padding: 1px;
-}
+
 h1 { color: white }
 
 #slideshow-wrap {
@@ -561,12 +556,28 @@ h4 {
     font-weight: bold;
     color: red;
     position: relative;
-    left: 280px;
+    left: 400px;
     display: inline-block;
     width: 75%;
     font-size: 20px;
 
 }
+
+#rev{
+    position: relative;
+
+
+}
+
+
+#img2{
+    position: relative;
+    background-color: green;
+
+    margin: auto;
+}
+
+
 
 #contenu {
     position: relative;
@@ -582,34 +593,39 @@ h4 {
 }
 
 #transforme{
+    position: relative;
     color: red;
     background-color: aqua;
-    height: 450px;
+    height: 25%;
     width: 87%;
-    margin-top: 19%;
+    margin-top: 20.5%;
     margin-left: 5%;
 }
 #transforme h2{
     position:relative;
-    top: 75px;
-    left: 38%;
+    top: 10px;
+    left: 42%;
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
 
 }
+
+/*
 #transforme img{
-    position: absolute;
+    position: relative;
     margin-top: 62px;
     width: 15%;
     border: none;
-    height: 16%;
+    height: 72%;
 }
+*/
+
 #fin{
 
     position: relative;
     margin: 0 auto;
-    left: 15px;
+    left: 20%;
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -632,32 +648,46 @@ h4 {
     margin-right: 30px;
 }
 #tableau{
-    margin-top: 100px;
+    background-color: red;
 }
-#tableau td{
-    font-family: arial, sans-serif;
-    font-style: italic;
-    font-weight: bold;
+#tableau ul{
+    display: inline-block;
+    margin-left: 3%;
     text-align: center;
-    font-size: 11px;
 }
 #ligtbox img{
-height: 40px;
+    height: 40px;
 }
 
-#ligtbox img, input{
-   position: relative;
+#ligtbox img{
+    position: relative;
+    left: 35%;
+    width: 40px;
+    height: 40px;
+}
+#ligtbox input{
+    position: relative;
     left: 35%;
 }
 
 #ligtbox h3, h3 + p{
-text-align: center;
+    text-align: center;
 }
-#ligtbox #b1,#b2{
-    display: inline;
+#ligtbox #b1{
+    display: inline-block;
+    width: 30%;
+    background-color: #f0c911;
+    text-align: center;
 }
 #ligtbox #b2{
-    margin-left: 60px;
+    display: inline-block;
+    width: 20%;
+    background-color: #f0c911;
+    text-align: center;
+
+}
+#ligtbox #b2{
+    margin-left: 40px;
 }
 
 /*BOUTIQUE*/
@@ -698,15 +728,11 @@ li{list-style-type: none;
 
 
 }
-
 .boutique{border: 3px solid red;
     margin-top: 1%;
     margin-right: auto;
     margin-left: auto;
-
-
 }
-
 #main ul{
     padding: 0;
 }
@@ -901,6 +927,7 @@ fieldset{
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
+
 #groupe{
     position: relative;
     right: 155px;
@@ -939,7 +966,7 @@ fieldset{
 #formulaire strong{
     position: relative;
     bottom: 135px;
-    left: 240px;
+    margin: auto;
 }
 #soumettre{
     margin-left: 80px;
@@ -1000,3 +1027,25 @@ fieldset{
 #footer a{color: red}
 
 #footer a:hover{color: blue}
+
+/*equipe*/
+#nutrition img{
+    width: 100%;
+text-align: center;
+    margin-top: 5%;
+    border: 2px solid red;
+}
+
+/*
+#nutri{
+    background-color: #ccddff;
+    position: relative;
+    width: 30%;
+    float: right;
+}
+*/
+#nutri p{
+    text-align: justify;
+    padding: 8px;
+
+}
