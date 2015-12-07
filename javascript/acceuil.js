@@ -81,6 +81,5 @@ function titre(){
     setInterval("chcolor()",1000);
 
 
-
 }
 //fin du flash titre h2
