@@ -194,117 +194,248 @@ a:active {
     color: red;
     font-weight: bold;
     display: inline-block;
-    width: 15%;
+    width: 50%;
     margin-bottom:2%;
     position: absolute
 }
 
 #footer>p+p {
     text-decoration: underline;
-    margin-left: 85%;
+    margin-left: 80%;
 }
 
 #footer p span{
-   position: relative;
-    left: 76px;
-    bottom: 18.5px;
+    position: relative;
 }
 /*ACCUEIL*/
 
 /*code du slider*/
-
-.container{
-    width:734px;
-    height:400px;
-    padding:20px;
-    border:1px solid gray;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-     background: gray;
-    text-align: center;
-
+#slides {
+    display: none;
 }
-.slider_wrapper{
-    overflow: hidden;
-    position:relative;
-    height:280px;
-    top:50px;
-}
-#image_slider{
 
+h1 { color: white }
+
+#slideshow-wrap {
+    display: block;
+    height: 320px;
+    min-width: 460px;
+    max-width: 840px;
+    margin: auto;
+    border: 12px rgba(255,255,240,1) solid;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    margin-top: 20px;
     position: relative;
-    height: auto;
+}
+
+#slideshow-inner {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    position: relative;
+}
+
+#slideshow-inner>ul {
     list-style: none;
+    height: 100%;
+    width: 500%;
     overflow: hidden;
-    float: left;
-    padding:0px;
-    margin:0px;
-
-}
-
-#image_slider li{
     position: relative;
-    float: left;
-}
-.nvgt{
-    position:absolute;
-    top: 120px;
-    height: 50px;
-    width: 30px;
-    opacity: 0.6;
-}
-.nvgt:hover{
-    opacity: 0.9;
-}
-#prev{
-    background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/prev.png') no-repeat center;
     left: 0px;
+    -webkit-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
 }
-#next{
-    background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/next.png') no-repeat center;
-    right: 0px;
+
+#slideshow-inner>ul>li {
+    width: 20%;
+    height: 320px;
+    float: left;
+    position: relative;
 }
-#pager{
-    padding:0px;
-    position:relative;
-    height:50px;
-    margin:auto;
-    margin-top:60px;
+
+#slideshow-inner>ul>li>img {
+    margin: auto;
+    height: 100%;
 }
-#pager li{
-    padding: 0px;
-    margin:5px;
-    width:20px;
-    height:20px;
-    border:3px solid red;
-    color:#000000;
-    list-style: none;
-    opacity: 0.6;
-    /*float:left;*/
-    display: inline-block;
-    border-radius: 3px;
+
+#slideshow-wrap input[type=radio] {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#slideshow-wrap label:not(.arrows):not(.show-description-label) {
+    position: absolute;
+    left: 50%;
+    bottom: -45px;
+    z-index: 100;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(200,200,200,1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
 }
-#pager li:hover{
-    opacity:0.9;
+
+#slideshow-wrap label:not(.arrows):active { bottom: -46px }
+
+#slideshow-wrap input[type=radio]#button-1:checked~label[for=button-1] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-2:checked~label[for=button-2] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-3:checked~label[for=button-3] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-4:checked~label[for=button-4] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-5:checked~label[for=button-5] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap label[for=button-1] { margin-left: -36px }
+
+#slideshow-wrap label[for=button-2] { margin-left: -18px }
+
+#slideshow-wrap label[for=button-4] { margin-left: 18px }
+
+#slideshow-wrap label[for=button-5] { margin-left: 36px }
+
+#slideshow-wrap input[type=radio]#button-1:checked~#slideshow-inner>ul { left: 0 }
+
+#slideshow-wrap input[type=radio]#button-2:checked~#slideshow-inner>ul { left: -100% }
+
+#slideshow-wrap input[type=radio]#button-3:checked~#slideshow-inner>ul { left: -200% }
+
+#slideshow-wrap input[type=radio]#button-4:checked~#slideshow-inner>ul { left: -300% }
+
+#slideshow-wrap input[type=radio]#button-5:checked~#slideshow-inner>ul { left: -400% }
+
+label.arrows {
+    font-family: 'WebSymbolsRegular';
+    font-size: 25px;
+    color: rgb(255,255,240);
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: none;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: transparent;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    text-shadow: 0px 0px 3px rgba(0,0,0,.8);
 }
+
+label.arrows:hover { opacity: 1 }
+
+label.arrows:active { margin-top: -23px }
+
+input[type=radio]#button-1:checked~.arrows#arrow-2, input[type=radio]#button-2:checked~.arrows#arrow-3, input[type=radio]#button-3:checked~.arrows#arrow-4, input[type=radio]#button-4:checked~.arrows#arrow-5 {
+    right: -55px;
+    display: block;
+}
+
+input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:checked~.arrows#arrow-2, input[type=radio]#button-4:checked~.arrows#arrow-3, input[type=radio]#button-5:checked~.arrows#arrow-4 {
+    left: -55px;
+    display: block;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+input[type=radio]#button-2:checked~.arrows#arrow-1 { left: -19px }
+
+input[type=radio]#button-3:checked~.arrows#arrow-2 { left: -37px }
+
+input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    font-family: 'Yanone Kaffeesatz';
+    z-index: 1000;
+}
+
+.description input { visibility: hidden }
+
+.description label {
+    font-family: 'WebSymbolsRegular';
+    background-color: rgba(255,255,240,1);
+    position: relative;
+    left: -17px;
+    top: 00px;
+    width: 40px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 7px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    z-index: 5;
+    color: rgb(20,20,20);
+}
+
+#slideshow-inner>ul>li:hover .description label { opacity: 1 }
+
+.description input[type=checkbox]:checked~label { opacity: 1 }
+
+.description .description-text {
+    background-color: rgba(255,255,230,.5);
+    padding-left: 45px;
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    top: -35px;
+    z-index: 4;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    color: rgb(20,20,20);
+}
+.description input[type=checkbox]:checked~.description-text { opacity: 1 }
 /*fin du code silder*/
 
+/*debut locov*/
 #locov {
     margin: 0 auto;
     position: relative;
+    left: 35px;
     width: 800px;
     height: 350px;
-    top: 5px;
+    top: 50px;
 }
-
 #locov img {
     width: 230px;
     height: 160px;
     border: 2px solid red;
 }
-
 #bloc,
 #bloc1,
 #bloc2,
@@ -317,7 +448,6 @@ a:active {
     width: 300px;
     font-style: italic;
 }
-
 #text,
 #text1,
 #text2,
@@ -330,19 +460,16 @@ a:active {
     margin-bottom: 1px;
     color: red;
 }
-
 #bloc1 {
     float: right;
     bottom: 170px;
     margin-right: 250px;
 }
-
 #bloc2 {
     float: right;
     margin-left: 500px;
-    bottom: 338px;
+    bottom: 343px;
 }
-
 #bloc4 {
     float: right;
     bottom: 330px;
@@ -351,18 +478,45 @@ a:active {
 
 #bloc5 {
     float: right;
-    bottom: 502px;
+    bottom: 503px;
     margin-left: 260px;
 }
-
 #bloc3 {
-    top: 8px;
+    top: 15px;
 }
+/* fin locov*/
 
-#contenu p {
-    color: black;
+/* fin contenu*/
+
+#contenu {
+    position: relative;
+    background-color: #fee801;
+    height: 50%;
+    margin-top: 50px;
+    background-image: url(images/dumbells.png);
+    background-repeat: no-repeat;
+    border: 2px solid red;
+    margin-left: 30px;
+    margin-right: 110px;
+    bottom: 15px;
+}
+#par {
+    font-family: arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
     position: absolute;
-    right: 90px;
+    left: 35%;
+}
+ #para {
+     font-family: arial, sans-serif;
+     font-style: italic;
+     font-weight: bold;
+     font-size: 18px;
+     position: absolute;
+     left: 42%;
+     top: 20%;
 }
 
 h4 {
@@ -375,24 +529,6 @@ h4 {
     color: red;
 }
 
-
-#para {
-    top: 30px;
-    font-family: arial, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-    left: 280px;
-}
-
-#par, #bouton {
-    font-family: arial, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 18px;
-}
-
 #contenu img {
     position: absolute;
     height: 80%;
@@ -401,115 +537,130 @@ h4 {
     top: 18px;
     margin-left: 10px;
 }
-
 #contenu #bouton{
-    position: absolute;
-    right: 220px;
-    top: 95px;
+    position: relative;
+    bottom: 18%;
+    left: 45%;
+    font-family: arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
 }
 #bouton #oui{
     position: relative;
     left: 35px;
 }
+/*fin contenu*/
 
+#transforme{
+    position: relative;
+    margin-top: 27%;
+    left: 11%;
+    width: 800px;
+    height: 340px;
+    color: red;
+
+}
+#transforme h2{
+    position: relative;
+    top: 25%;
+    left: 27%;
+    font-family: arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+#img2{
+    position: relative;
+    top: 18%;
+
+    text-align: center;
+    height: 300px;
+}
+#transforme img{
+    position: relative;
+    left: 225px;
+    width: 15%;
+    border: none;
+    height: 80%;
+}
+/*debut adresse*/
 #pas {
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
     color: red;
     position: relative;
-    left: 120px;
+    margin-top: 10% ;
+    left: 150px;
     display: inline-block;
     width: 75%;
     font-size: 20px;
 
 }
-
-#contenu {
-    position: relative;
-    background-color: #fee801;
-    height: 50%;
-    margin-top: 50px;
-    background-image: url(images/dumbells.png);
-    background-repeat: no-repeat;
-    border: 2px solid red;
-    margin-left: 30px;
-    margin-right: 110px;
-    bottom: 37px;
-}
-
-
-#transforme{
-    color: red;
-    background-color: aqua;
-    height: 310px;
-    width: 87%;
-    margin-top: 27%;
-    margin-left: 9%;
-}
-#transforme h2{
-    position: absolute;
-    left: 38%;
-    font-family: arial, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-}
-#transforme img{
-    position: absolute;
-    margin-top: 62px;
-    width: 32%;
-    border: none;
-}
 #fin{
-    display: inline-block;
+
     position: relative;
-    text-align: center;
-    left: 15px;
+    margin: 0 auto;
+    left: 16%;
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
     color: red;
     line-height: 30px;
+
 }
 
 #fin1,#fin2,#fin3{
     display: inline-block;
-    width: 280px;
+    width: 200px;
     vertical-align: top;
     font-size: 13px;
+
 }
 
-#fin2
-{
+#fin2 {
     margin-left: 30px;
     margin-right: 30px;
 }
-#tableau td{
-    font-family: arial, sans-serif;
-    font-style: italic;
-    font-weight: bold;
+#tableau{
+   text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+#tableau ul{
+    display: inline-block;
+    margin-left: 3%;
     text-align: center;
-    font-size: 11px;
+}
+#tableau li{
+    font-size: 8px;
+}
+#ligtbox {
+    text-align: center;
 }
 #ligtbox img{
-height: 40px;
+    position: relative;
+    left: 35%;
+    width: 40px;
+    height: 40px;
 }
-#mail img{
-    height: 55px;
+#ligtbox input{
+    position: relative;
+    left: 35%;
+
 }
-  #ligtbox h3, p{
-   text-align: center;
-}
-#ligtbox #email, #mail{
+#ligtbox #b1{
     display: inline-block;
-    width: 300px;
-    text-align: center;
-    padding-left: 30px;
-}
-#mail{
+    width: 30%;
+    margin-right: 30px;
 
 }
-
+#ligtbox #b2{
+    display: inline-block;
+    width: 30%;
+}
 
 /*BOUTIQUE*/
 
@@ -549,15 +700,11 @@ li{list-style-type: none;
 
 
 }
-
 .boutique{border: 3px solid red;
     margin-top: 1%;
     margin-right: auto;
     margin-left: auto;
-
-
 }
-
 #main ul{
     padding: 0;
 }
@@ -707,7 +854,7 @@ h5+ul {
 /*FORMULAIRE*/
 
 #formulaire{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -722,71 +869,45 @@ legend{color: red;
 fieldset{
     width: 70%;
     margin: 0 auto;
-    /*border: 5px solid red;*/
+    border: 5px solid red;
     text-align: center;
     margin-top:50px;
 }
 #formulaire span{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .f1{
-    /*width: 38%;*/
+    width: 38%;
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
     font-style: italic;
     font-weight: bold;
 }
-/*#nom,#ville,#code,#cell{
-   *//* margin-left: 40px;*//*
-}*/
-
-#prenom {
-    margin-right: 50px;
+#nom,#ville,#code,#cell{
+    margin-left: 40px;
 }
-
-#cell {
-    margin-right: 25px;
-}
-
-
 #courriel{
-    /*position: relative;
-    right: 8px;*/
+    position: relative;
+    right: 8px;
 }
 #rad{
     display: inline-block;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 45px;
     color: red;
     font-style: italic;
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
 
-#femme {
-    margin-right: 10px;
-
-
-}
 #groupe{
-    /*position: relative;
-    right: 155px;*/
-  /*  top: 20px;*/
+    position: relative;
+    right: 155px;
+    top: 20px;
 }
-
-#avant-midi, #apres-midi{
-    margin-right: 20px;
-
-}
-
-select{
-    margin-left: 10px;
-   }
-
 #formulaire label{
     display: inline-block;
-    /*width: 140px;*/
+    width: 120px;
     color: red;
     font-style: italic;
     font-weight: bold;
@@ -799,8 +920,7 @@ select{
     font-weight: bold;
     color: red;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 40px;
 }
 #oui {
     margin-right: 40px;
@@ -812,16 +932,13 @@ select{
     color: red;
 }
 #commentaire{
-
-    margin-right: 140px;
-    margin-top: 50px;
+    margin-right: 110px;
+    margin-top: 30px;
 }
-
-
 #formulaire strong{
     position: relative;
     bottom: 135px;
-    left: 255px;
+    margin: auto;
 }
 #soumettre{
     margin-left: 80px;
@@ -834,7 +951,7 @@ select{
 /* FITNESS TEST*/
 
 #fittest fieldset{
-   /* border: 3px solid red;*/
+    border: 3px solid red;
     text-align: center;
 }
 
@@ -852,7 +969,6 @@ select{
     width:130px;
     text-decoration:none;
     text-align:center;
-    margin-top: 20px;
 
 }
 .button_test:hover {
@@ -867,7 +983,7 @@ select{
 
 #fittest div {
     margin-top: 30px;
-    /*border-bottom: 1px solid black;*/
+    border-bottom: 1px solid black;
 }
 
 #fittest li {
@@ -887,3 +1003,37 @@ select{
 #footer a{color: red}
 
 #footer a:hover{color: blue}
+
+/*equipe*/
+ #nutrition img {
+       width: 100%;
+       text-align: center;
+       margin-top: 10%;
+       border: 2px solid red;
+       position: relative;
+       z-index: 1;
+ }
+#nom1{
+    position: absolute;
+    z-index: 2;
+    bottom: 65%;
+}
+#nom2{
+   position: relative;
+    z-index: 2;
+    left: 25%;
+    bottom: 65%;
+}
+#nutri p{
+    text-align: justify;
+    line-height: 2;
+}
+#nutri h2{
+    text-align: center;
+    color: red;
+    margin-top: 7%;
+    font-family: arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
