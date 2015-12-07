@@ -4,70 +4,72 @@
 
 <head>
     <title>Formulaire</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet_header.css" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet_header.css"/>
 
 </head>
 
 <body>
-    <div id="wrapper">
-        
-<div id="fixed">        
+<div id="wrapper">
+
+    <div id="fixed">
         <p id="callus">call us: 514 515 1146</p>
+
         <p id="engfr">Eng / Fr</p>
-        <img id="imagetop" src="../images/header%20top.jpg" alt="headertop" />
-        <img id="logo" src="../images/logo_gym_siteweb.png" alt="logo" />
+        <img id="imagetop" src="../images/header%20top.jpg" alt="headertop"/>
+        <img id="logo" src="../images/logo_gym_siteweb.png" alt="logo"/>
 
         <div id="topslogan">
             <h2 id="wepush">we push your limits</h2>
-            <img id="lineblanche" src="../images/line%20blanche.jpg" alt="lineblanche" />
+            <img id="lineblanche" src="../images/line%20blanche.jpg" alt="lineblanche"/>
+
             <h2 id="onpousse">on pousse vos limites</h2>
         </div>
 
         <div id="side">
-            <img id="imageside" src="../images/header%20side.jpg" alt="headerside" />
+            <img id="imageside" src="../images/header%20side.jpg" alt="headerside"/>
 
             <div id="icons">
-                <a href="https://www.facebook.com/"> <img src="../images/icons/facebook_small.png" alt="facebook" /></a>
-                <a href="https://www.twitter.com/"> <img src="../images/icons/twitter-small.png" alt="twitter" /></a>
-                <a href="https://www.instagram.com/"> <img src="../images/icons/Instagram-small.png" alt="insta" /></a>
-                <a href="https://www.youtube.com/"> <img src="../images/icons/YouTube-small.png" alt="youtube" /></a>
+                <a href="https://www.facebook.com/"> <img src="../images/icons/facebook_small.png" alt="facebook"/></a>
+                <a href="https://www.twitter.com/"> <img src="../images/icons/twitter-small.png" alt="twitter"/></a>
+                <a href="https://www.instagram.com/"> <img src="../images/icons/Instagram-small.png" alt="insta"/></a>
+                <a href="https://www.youtube.com/"> <img src="../images/icons/YouTube-small.png" alt="youtube"/></a>
             </div>
         </div>
-    
+
         <div id="mainmenu">
-                <ul id="menulist">
-                    <li><a href="../index.html">accueil</a></li>
-                    <li><a href="galerie.html">gyms</a></li>
-                    <li><a href="#">equipe</a></li>
-                    <li><a href="fitness-test.html">fit test</a></li>
-                    <li><a href="horaire.html">horaire</a></li>
-                    <li><a href="boutique.html">boutique</a></li>
-                    <li><a href="formulaire.html">contact</a></li>
+            <ul id="menulist">
+                <li><a href="../index.html">accueil</a></li>
+                <li><a href="galerie.html">gyms</a></li>
+                <li><a href="#">equipe</a></li>
+                <li><a href="fitness-test.html">fit test</a></li>
+                <li><a href="horaire.html">horaire</a></li>
+                <li><a href="boutique.html">boutique</a></li>
+                <li><a href="formulaire.html">contact</a></li>
 
-                </ul>
-            
-         
-</div>
+            </ul>
+
+
+        </div>
     </div>
-        
-        <div id="main">
-               
-<div id="formulaire">
 
-    <form name="form_inscription" action="#" method="post">
-        <div id="msg_info_validation"></div>
+    <div id="main">
 
-        <fieldset>
+        <div id="formulaire">
 
-            <legend>CONTACT</legend>
+            <form name="form_inscription" action="../index.html" method="post">
+                <div id="msg_info_validation"></div>
 
-<!--champ texte-->
+                <fieldset id="fieldset">
+
+                    <legend>CONTACT</legend>
+
+                    <!--champ texte-->
                 <span>
 <label for="prenom">*Prénom</label>
                 <input type="text" id="prenom" name="prenom" class="f1"/>
 <label for="nom">*Nom</label>
-                <input type="text" id="nom" name="nom"  class="f1"/>
+                <input type="text" id="nom" name="nom" class="f1"/>
                 </span>
 
                                 <span>
@@ -77,43 +79,43 @@
             <label for="courriel">*Courriel</label>
                 <input type="text" id="courriel" name="courriel" class="f1"/>
             </span>
-              <!--champ radio-->
-            
-                <div id="rad">
-                    Votre genre:
-                    FEMME <input type="radio" name="sex" class="radio" checked="checked" />
+                    <!--champ radio-->
 
-                    HOMME <input type="radio" name="sex" class="radio" />
-                </div>
-<!--liste déroulante-->
-            <div id="groupe" >
-                <label for="groupe">Votre age:</label>
-                <select name="groupe" class="f1">
-                        <option>MOINS DE 18ANS</option>
-                        <option>18-25ANS</option>
-                        <option>26-35ANS</option>
-                        <option>36-45ANS</option>
-                        <option>PLUS DE 45ANS</option>
+                    <div id="rad">
+                        Votre genre:
+                        FEMME <input type="radio" name="sex" class="radio" checked="checked"/>
 
-                </select>
+                        HOMME <input type="radio" name="sex" class="radio"/>
+                    </div>
+                    <!--liste déroulante-->
+                    <div id="groupe">
+                        <label for="groupe">Votre age:</label>
+                        <select name="groupe" class="f1">
+                            <option>MOINS DE 18ANS</option>
+                            <option>18-25ANS</option>
+                            <option>26-35ANS</option>
+                            <option>36-45ANS</option>
+                            <option>PLUS DE 45ANS</option>
 
-            </div>
-            
-           <!--information--> 
-            
-            <div id="temps">
+                        </select>
 
-            <span>Avez vous praqtiqué un sport dans les 12 derniers mois :</span>
+                    </div>
+
+                    <!--information-->
+
+                    <div id="temps">
+
+                        <span>Avez vous praqtiqué un sport dans les 12 derniers mois :</span>
             <span>OUI<input type="radio" id="oui" name="oui-non" checked="checked"/>
             NON<input type="radio" id="non" name="oui-non"/></span>
 
-            </div>
-            
-                <!--champ case à cocher-->
-               
-            <div>
-                    
-            <span id="moment">*Quel est le meilleur moment pour vous joindre?</span>
+                    </div>
+
+                    <!--champ case à cocher-->
+
+                    <div>
+
+                        <span id="moment">*Quel est le meilleur moment pour vous joindre?</span>
                     <span>
             <label for="avant-midi">AVANT-MIDI</label>
             <input type="checkbox" id="avant-midi" name="avant-midi"/>
@@ -123,9 +125,9 @@
             <label for="soiree">SOIRÉE</label>
             <input type="checkbox" id="soiree" name="soiree"/>
                         </span>
-                </div>
-            
-                <!--texte multi-lignes-->
+                    </div>
+
+                    <!--texte multi-lignes-->
 
                 <span>
 <label for="commentaire"><strong>Votre message:</strong></label>
@@ -133,37 +135,44 @@
                     </span>
 
             <span>
-                <input type="submit" class="button_test"value="EFFACER" id="effacer" />
+                <input type="submit" class="button_test" value="EFFACER" id="effacer"/>
                 <!--<input type="submit" value="SOUMETTRE" id="soumettre"/>-->
-                <input type="submit" class="button_test" value="S'INSCRIRE"/>
+                <input id="inscription" type="button" class="button_test" value="S'INSCRIRE"/>
 
             </span>
 
 
 
+
+
+                </fieldset>
+
             <div id="valide">
-                Le formulaire est valide. Nous allons vous contacter bien tot.<span>Merci pour votre fidélité.</span>
-                <a href="../index.html" class="button_test">OK</a>
-
+                Le formulaire est valide. Nous allons vous contacter bien
+                tot.<span>Merci pour votre fidélité.</span>
+                <input id="ok" type="submit" class="button_test" value="OK"/>
+                <!--<a href="../index.html" class="button_test">OK</a>-->
 
             </div>
-            
-        </fieldset>
-    </form>
+            </form>
+
+        </div>
+
+
+
+        <div id="footer">
+            <p>&copy;LocoMotion 2015</p>
+
+            <p><a href="#wrapper">Haut de page</a></p>
+
+        </div>
+
+    </div>
 </div>
-            
-            <div id="footer">
-                <p>&copy;LocoMotion 2015</p>
-                <p><a href="#wrapper">Haut de page</a></p>
-            
-            </div>
-        
-        </div>
-        </div>
 
 
-    <script src="../javascript/formulaire.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../javascript/formulaire.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </body>
 
 </html>

@@ -827,6 +827,10 @@ select{
     margin-left: 80px;
 }
 
+#valide {
+    text-align: center;
+}
+
 /* FITNESS TEST*/
 
 #fittest fieldset{
