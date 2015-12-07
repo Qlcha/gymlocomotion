@@ -854,7 +854,7 @@ h5+ul {
 /*FORMULAIRE*/
 
 #formulaire{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -869,45 +869,71 @@ legend{color: red;
 fieldset{
     width: 70%;
     margin: 0 auto;
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     text-align: center;
     margin-top:50px;
 }
 #formulaire span{
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .f1{
-    width: 38%;
+    /*width: 38%;*/
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
     font-style: italic;
     font-weight: bold;
 }
-#nom,#ville,#code,#cell{
-    margin-left: 40px;
+/*#nom,#ville,#code,#cell{
+   *//* margin-left: 40px;*//*
+}*/
+
+#prenom {
+    margin-right: 50px;
 }
+
+#cell {
+    margin-right: 25px;
+}
+
+
 #courriel{
-    position: relative;
-    right: 8px;
+    /*position: relative;
+    right: 8px;*/
 }
 #rad{
     display: inline-block;
-    margin-left: 45px;
+    margin-left: 30px;
+    margin-bottom: 30px;
     color: red;
     font-style: italic;
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
 
-#groupe{
-    position: relative;
-    right: 155px;
-    top: 20px;
+#femme {
+    margin-right: 10px;
+
+
 }
+#groupe{
+    /*position: relative;
+    right: 155px;*/
+    /*  top: 20px;*/
+}
+
+#avant-midi, #apres-midi{
+    margin-right: 20px;
+
+}
+
+select{
+    margin-left: 10px;
+}
+
 #formulaire label{
     display: inline-block;
-    width: 120px;
+    /*width: 140px;*/
     color: red;
     font-style: italic;
     font-weight: bold;
@@ -920,7 +946,8 @@ fieldset{
     font-weight: bold;
     color: red;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 #oui {
     margin-right: 40px;
@@ -932,13 +959,16 @@ fieldset{
     color: red;
 }
 #commentaire{
-    margin-right: 110px;
-    margin-top: 30px;
+
+    margin-right: 140px;
+    margin-top: 50px;
 }
+
+
 #formulaire strong{
     position: relative;
     bottom: 135px;
-    margin: auto;
+    left: 255px;
 }
 #soumettre{
     margin-left: 80px;
@@ -951,7 +981,7 @@ fieldset{
 /* FITNESS TEST*/
 
 #fittest fieldset{
-    border: 3px solid red;
+    /* border: 3px solid red;*/
     text-align: center;
 }
 
@@ -969,6 +999,7 @@ fieldset{
     width:130px;
     text-decoration:none;
     text-align:center;
+    margin-top: 20px;
 
 }
 .button_test:hover {
@@ -983,7 +1014,6 @@ fieldset{
 
 #fittest div {
     margin-top: 30px;
-    border-bottom: 1px solid black;
 }
 
 #fittest li {
@@ -1055,23 +1085,3 @@ fieldset{
     -ms-animation:     blink 5s infinite;
 }
 
-@-webkit-keyframes blink {
-    0%   { color:red; }
-    50%  {color:black;}
-    100% { color:blue; }
-}
-@-moz-keyframes blink {
-    0%   { color:red; }
-    50%  {color:black;}
-    100% { color:blue; }
-}
-@-ms-keyframes blink {
-    0%   { color:red; }
-    50%  {color:black;}
-    100% { color:blue; }
-}
-.gras{
-    color: red;
-    font-size: 12px;
-    font-weight: bold;
-}

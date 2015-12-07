@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    height: auto;
+    width: 80%;
+}
+
+#callus {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    left: 15%;
+    top: 12%;
+}
+
+#engfr {
+    color: red;
+    position: absolute;
+    font-weight: bold;
+    right: 12%;
+    top: 12%;
+}
+
+#imagetop {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+}
+
+#imageside {
+    margin: 0;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    top: 23.5%;
+}
+
+#side {
+    height: 800px;
+    width: 10%;
+    position: fixed;
+    margin: 0 0;
+}
+
+#logo {
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    width: 15%;
+    z-index: 10;
+}
+
+#topslogan {
+    position: fixed;
+    margin-left: 3%;
+    top: 8.5%;
+    background-color: #fee801;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: right;
+    width: 100%;
+    height: 15%;
+}
+
+#lineblanche {
+    height: 3%;
+    width: 28%;
+    margin: 0;
+    margin-right: 11.5%;
+    margin-top: 0px;
+    padding: 0;
+}
+
+#wepush {
+    font-family: Arial Narrow;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 15%;
+    margin-top: 1%;
+    padding: 0;
+}
+
+#onpousse {
+    font-family: Arial Narrow;
+    font-size: 120%;
+    color: red;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 11.6%;
+    margin-top: 0;
+    padding: 0;
+}
+
+#icons {
+    position: absolute;
+    width: auto;
+    left: 37%;
+    top: 10%;
+}
+
+#icons img {
+    margin-bottom: 20px;
+}
+
+#menulist {
+    position: absolute;
+    width: 80%;
+    margin: 0;
+    margin-left: 9%;
+    padding: 0;
+    display: inline-block;
+    background-color: white;
+}
+
+#mainmenu li {
+    background-color: red;
+    border: 2px solid black;
+    margin: 0;
+    margin-right: 2.7%;
+    padding: 0px;
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    height: 30px;
+}
+
+#fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:23.5%;
+}
+
+#mainmenu {
+    position: fixed;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    left: 10%;
+    top: 23.5%;
+    width: 90%;
+    background-color: white;
+}
+
+#mainmenu li:hover {
+    background-color: gray;
+    color: red;
+    cursor: pointer;
+}
+
+#mainmenu li:active {
+    background-color: #fee801;
+}
+
+a:active {
+    color: red;
+}
+
+#fixed a {
+    display: block;
+    width: 100%;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0;
+    line-height: 200%;
+}
+
+#main {
+    position: absolute;
+    padding: 0px;
+    margin-left: 2.5%;
+    margin-top: 25%;
+    left: 23%;
+    top: 10%;
+    width: 85%;
+    z-index: -200;
+    height: auto;
+}
+
+#footer p{
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    margin-bottom:2%;
+    position: absolute
+}
+
+#footer>p+p {
+    text-decoration: underline;
+    margin-left: 80%;
+}
+
+#footer p span{
+    position: relative;
+}
+
+
+
+#footer a{color: red}
+
+#footer a:hover{color: blue}
+
+/*BOUTIQUE*/
+
+.description {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-bottom: 0;
+}
+
+.produit {
+    display: inline-block;
+    width: 300px;
+}
+
+.boutique img{margin: 15px 20px;
+}
+
+.prix>h3 {
+    display: inline;
+    width: 50px;
+}
+
+.prix>h2 {
+    display: inline;
+    width: 50px;
+    margin-left: 30px;
+    color: red;
+}
+
+.livrason {
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+li{list-style-type: none;
+
+
+}
+
+.boutique{border: 3px solid red;
+    margin-top: 1%;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+
+#main ul{
+    padding: 0;
+}
