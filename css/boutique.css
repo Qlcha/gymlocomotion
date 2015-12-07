@@ -264,3 +264,45 @@ li{list-style-type: none;
 #main ul{
     padding: 0;
 }
+#tableau{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+#tableau ul{
+    display: inline-block;
+    margin-left: 3%;
+    text-align: center;
+}
+#tableau li{
+    font-size: 10px;
+}
+#ligtbox {
+    text-align: center;
+}
+#ligtbox img{
+    position: relative;
+    left: 35%;
+    width: 40px;
+    height: 40px;
+}
+#ligtbox input{
+    position: relative;
+    left: 35%;
+
+}
+#ligtbox #b1{
+    display: inline-block;
+    width: 30%;
+    margin-right: 30px;
+
+}
+#ligtbox #b2{
+    display: inline-block;
+    width: 30%;
+}
+.gras{
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+}
