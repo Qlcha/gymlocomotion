@@ -35,10 +35,52 @@ function affiche1(){
 
     document.getElementById("demo1").innerHTML = "gymlocomotion@gmail.com";
 }
+//fin lightbox
+
+//mettre en majuscule la 1ère lettre du paragraphe
+
 function premiere_lettre(){
 
-var mot = document.getElementById("majuscule");
+var mot = document.getElementById("majuscule").value;
 
-document.write(nom.charAt(0).toUpperCase());
+mot.charAt(0).toUpperCase();
 }
+//fin de la majuscule
 
+//mettre le code flash sur le titre h2
+
+function titre(){
+   var couleur = document.getElementById('flash');
+
+// The JavaScript Source!! http://javascript.internet.com
+    function initArray() {
+        this.length = initArray.arguments.length;
+        for (var i = 0; i < this.length; i++) {
+            this[i] = initArray.arguments[i];
+        }
+    }
+
+    var couleur = "PROFESSIONNELS ACCRÉDITÉS";
+    var x = 0;
+    var color = new initArray(
+        "red",
+        "blue",
+        "green",
+        "black"
+    );
+
+    {
+        document.write('<div id="c" align="center">'+ctext+'</div>');
+    }
+    function chcolor(){
+        {
+            document.all.c.style.color = color[x];
+        }
+        (x < color.length-1) ? x++ : x = 0;
+    }
+    setInterval("chcolor()",1000);
+
+
+
+}
+//fin du flash titre h2
