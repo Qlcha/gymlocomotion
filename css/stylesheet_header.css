@@ -1047,7 +1047,7 @@ select{
     position: absolute;
     z-index: 2;
     top: 22%;
-    left: 72%;
+    left: 76%;
     text-align: center;
     font-family: arial, sans-serif;
     font-style: italic;
@@ -1059,7 +1059,7 @@ select{
    position: absolute;
     z-index: 2;
     top: 10%;
-    left: 8%;
+    left: 5%;
     font-family: arial, sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -1070,6 +1070,9 @@ select{
 #nutri p{
     text-align: justify;
     line-height: 2;
+    text-indent: 20px;
+    font-style: italic;
+    font-family: arial, sans-serif;
 }
 #nutri h2{
     text-align: center;
@@ -1084,9 +1087,30 @@ select{
     -moz-animation:    blink 5s infinite;
     -ms-animation:     blink 5s infinite;
 }
+@-webkit-keyframes blink {
+    0%   { color:red; }
+    50%  { color:blue;}
+    100% { color:brown; }
+}
+@-moz-keyframes blink {
+    0%   { color:red; }
+    50%  { color:blue;}
+    100% { color:brown; }
+}
+@-ms-keyframes blink {
+    0%   { color:red; }
+    50%  { color:blue;}
+    100% { color:brown; }
+}
 .gras{
     color: red;
     font-weight: bold;
     font-size: 10px;
 }
+#jeu{
+    text-align: center;
+     margin-top: 5%;
+}
+
+
 
