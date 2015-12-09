@@ -306,3 +306,19 @@ li{list-style-type: none;
     font-weight: bold;
     font-size: 10px;
 }
+
+/*survole des produits*/
+.zoom {
+    height:280px;
+}
+.zoom p {
+    text-align:center;
+}
+.zoom img {
+    width:200px;
+    height:250px;
+}
+.zoom img:hover {
+    width:300px;
+    height:400px;
+}

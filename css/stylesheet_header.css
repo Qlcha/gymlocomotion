@@ -624,19 +624,7 @@ h4 {
     margin-left: 30px;
     margin-right: 30px;
 }
-#tableau{
-   text-align: center;
-    margin: 0 auto;
-    margin-top: 5%;
-}
-#tableau ul{
-    display: inline-block;
-    margin-left: 3%;
-    text-align: center;
-}
-#tableau li{
-    font-size: 10px;
-}
+
 #ligtbox {
     text-align: center;
 }
@@ -1043,30 +1031,6 @@ select{
        position: relative;
        z-index: 1;
  }
-#nom1{
-    position: absolute;
-    z-index: 2;
-    top: 22%;
-    left: 76%;
-    text-align: center;
-    font-family: arial, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    color: red;
-
-}
-#nom2{
-   position: absolute;
-    z-index: 2;
-    top: 10%;
-    left: 5%;
-    font-family: arial, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    color: red;
-    text-align: center;
-}
-
 #nutri p{
     text-align: justify;
     line-height: 2;
@@ -1107,10 +1071,22 @@ select{
     font-weight: bold;
     font-size: 10px;
 }
-#jeu{
+
+/*tableau*/
+#tableau{
     text-align: center;
-     margin-top: 5%;
+    margin: 0 auto;
+    margin-top: 5%;
 }
+#tableau ul{
+    display: inline-block;
+    margin-left: 3%;
+    text-align: center;
+}
+#tableau li{
+    font-size: 10px;
+}
+
 
 
 
