@@ -64,7 +64,10 @@
 
        <div id="nutrition">
 
-           <img src="../images/équipe-shop.png" alt="equipe" id="image"/>
+           <p id="nom1">Audrey nutritionniste <br/> BAC en nutrition </p>
+           <p id="nom2">Julien entraîneur personnel <br/> BAC en kinésiologie </p>
+           <img src="../images/équipe.jpg" alt="equipe" id="image"/>
+
 
 
        </div>
@@ -78,6 +81,33 @@
              Gymlocomotion est l'un des employeurs dans son industrie à n’embaucher qu’uniquement des professionnels ayant une formation universitaire dans leur champs d’intervention professionnel pour l’encadrement de sa clientèle.</p>
         </div>
 
+
+        <div id="jeu">
+
+            <input type="button" value="DIVERTISSEMENT" onclick="jeux()"/>
+
+            <div id="divers">
+
+                <!-- Begin
+document.write("<FORM><CENTER>")
+document.write('<INPUT TYPE="text" VALUE="0" ');
+document.write('NAME="num" SIZE=10 onFocus="this.blur()"><BR>')
+document.write("<HR SIZE=1 WIDTH=40%>")
+for (var i = 0; i < 10; ++i) {
+for (var j = 0; j < 10; ++j) {
+document.write('<INPUT TYPE="checkbox" ');
+document.write('onClick="display(this)">')}
+document.write("<BR>")}
+document.write("<HR SIZE=1 WIDTH=40%>")
+document.write('<INPUT TYPE="button" VALUE="restart" ');
+document.write('onClick="restart(this.form)">')
+document.write("</CENTER></FORM>")
+// End -->
+            </div>
+
+        </div>
+
+
         <div id="tableau">
             <ul id="tab1">
                 <li class="gras">NOS GYMS</li>
@@ -87,14 +117,14 @@
             </ul>
 
             <ul id="tab2">
-                <li class="gras">NOTRE ÉQUIPE</li>
+                <li class="gras">ÉQUIPE</li>
                 <li>Entraîneur personnel</li>
                 <li>Nutritionniste</li>
                 <li>Service à la clientèle</li>
             </ul>
 
             <ul id="tab3">
-                <li class="gras">FITNESS-TEST </li>
+                <li class="gras">NOS SERVICES </li>
                 <li> Conditionnement physique et nutrition</li>
                 <li> Conditionnement physique</li>
                 <li> nutrition</li>
